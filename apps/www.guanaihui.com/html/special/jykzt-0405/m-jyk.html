@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<script src="//dev01.guanaihui.cn/apps/m.guanaihui.com/js/app.min.js"></script>
+	<script data-main="//dev01.guanaihui.cn/apps/m.guanaihui.com/jssrc/special/changxiangcard.js" src="//dev01.guanaihui.cn/guanaihui/js/require.min.js"></script>
+	<title></title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body,html{
+			margin: 0;
+			width: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+		body{
+			position: relative;
+			font-size: 12px;
+			font-family: "Microsoft Yahei","微软雅黑";
+			background: -webkit-linear-gradient(left, #97ecff,#66daf2,#97ecff);
+			background: -o-linear-gradient(right, #97ecff,#66daf2,#97ecff);
+			background: -moz-linear-gradient(right, #97ecff,#66daf2,#97ecff);
+			background: linear-gradient(to right, #97ecff,#66daf2,#97ecff);
+			padding-bottom: 30px;
+			color: #666;
+		}
+		img{
+			width: 100%;
+		}
+		ul,ol,li{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.ft{
+			display: block;
+			position: relative;
+			overflow: hidden;
+		}
+		.ft img{
+			position: absolute;
+			z-index: 3;
+		}
+		.ft .bg{
+			position: relative;
+			width: 100%;
+			z-index: 2;
+		}
+		.ft .this{
+			width: 69.375%;
+			margin-left: 15.3125%;
+			animation: down 1.2s infinite;
+			-webkit-animation: down 1.2s infinite;
+		}
+		@keyframes down{
+			0%{transform: translateY(2px);}
+			50%{transform: translateY(0px);}
+			100%{transform: translateY(2px);}
+		}
+		@-webkit-keyframes down{
+			0%{-webkit-transform: translateY(2px);}
+			50%{-webkit-transform: translateY(0px);}
+			100%{-webkit-transform: translateY(2px);}
+		}
+		.ft .click{
+			width: 41.25%;
+			margin-left: 46.25%;
+			bottom: 2%;
+			animation: pound 1.2s infinite;
+			-webkit-animation: pound 1.2s infinite;
+		}
+		@keyframes pound {
+			from{transform: scale(1.05,1.05);}
+			50%{transform: scale(1,1);}
+			to{transform: scale(1.05,1.05);}
+		}
+			@-webkit-keyframes pound {
+			from{-webkit-transform: scalex(1.05);}
+			50%{-webkit-transform: scalex(1);}
+			to{-webkit-transform: scalex(1.05);}
+		}
+	</style>
+	</head>
+<body>
+	<img src="bg.jpg" alt="">
+	<a href="javascript:void(0)" class="ft" data-type="tjkList">
+		<img src="this.png" alt="" class="this">
+		<img src="foot.jpg" alt="" class="bg">
+		<img src="onclick.png" alt="" class="click">
+	</a>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-71515586-1', 'auto');
+	ga('send', 'pageview');
+</script>
+</body>
+
+</html>

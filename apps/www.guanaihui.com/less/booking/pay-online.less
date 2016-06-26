@@ -1,0 +1,78 @@
+    /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：booking/index.less (填写预约信息)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    @import "../mixins.less";
+    @import "../variables.less";
+    @import "./process-bar.less";
+    .con-box {
+        background-color: #fff;
+        border: 1px solid @lighter-line-gray-color;
+        padding: 30px;
+        p {
+            color: #393836;
+            font-size: 18px;
+            i {
+                color: @green-color;
+                font-size: 18px;
+                padding-right: 10px;
+            }
+            &.order {
+                font-size: 14px;
+                .text-orange {
+                    font-weight: 600;
+                }
+            }
+        }
+        .pay-way {
+            border: 1px solid @lighter-line-gray-color;
+            padding: 10px 30px;
+            .title {
+                border-bottom: 1px solid @lighter-line-gray-color;
+                padding: 20px;
+                color: #393836;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .plat-form {
+                .clearfix();
+                li {
+                    float: left;
+                    width: 14.2%;
+                    input[type=checkbox],
+                    input[type=radio] {
+                        margin-top: 8px;
+                    }
+                    img {
+                        height: 26px;
+                        width: 117px;
+                    }
+                }
+            }
+            .union-form {
+                .clearfix();
+                li {
+                    float: left;
+                    width: 14.2%;
+                    input[type=checkbox],
+                    input[type=radio] {
+                        margin-top: 10px;
+                    }
+                    img {
+                        height: 31px;
+                        width: 117px;
+                    }
+                }
+            }
+        }
+        .btn-pay-box {
+            margin-top: 20px;
+            &>.btn {
+                background-color: @orange-color;
+                color: #fff;
+                padding: 10px 40px;
+            }
+        }
+    }

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人中心 - 专项检查预约</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--禁止浏览器在本地计算机缓存当前页面-->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <!-- 引入Bootstrap框架的stylesheet资源 -->
+    <link rel="stylesheet" href="//dev01.guanaihui.cn/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//dev08.guanaihui.cn/apps/www.guanaihui.com/css/app.min.css">
+    <link rel="stylesheet" href="//dev19.guanaihui.cn/apps/www.guanaihui.com/css/personal/special-appointment.min.css">
+    <!--[if lte IE 6]>        
+        <link rel="stylesheet" type="text/css" href="//dev14.guanaihui.cn/bootstrap/plugins/bsie/bootstrap-ie6.min.css">        
+        <link rel="stylesheet" type="text/css" href="//dev06.guanaihui.cn/bootstrap/plugins/bsie/ie.min.css">
+        <![endif]-->
+</head>
+
+<body>
+    <!--页面顶部条-->
+    <div class="toper">
+        <div class="container clearfix">
+            <div class="pull-left">
+                <a href="#">手机客户端</a>
+                <a href="#">关于我们</a>
+            </div>
+            <div class="pull-right">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#">
+                        会员中心
+                    </a>
+                <a href="#">企业专区</a>
+            </div>
+        </div>
+    </div>
+    <!--头部区域-->
+    <div class="header">
+        <div class="container">
+            <div class="logo-location">
+                <a href="../home/"><img src="//dev18.guanaihui.cn/guanaihui/css/images/guanaihui-17050.png" alt="关爱汇logo"></a>
+                <a href="javascript:void(0);" data-href="../components/region.html" data-toggle="tooltip" data-placement="bottom" title="点击切换城市" class="location-handle">
+                    <span class="location">上海</span>
+                    <span class="caret"></span>
+                </a>
+            </div>
+            <dl class="hotline">
+                <dt>全国免费咨询热线</dt>
+                <dd>400-728-7289</dd>
+            </dl>
+            <div class="searcher-container">
+                <ul class="searcher">
+                    <li class="submit">
+                        <button type="submit" class="transparent">搜索</button>
+                    </li>
+                    <li class="enter">
+                        <input type="text" placeholder="输入机构名称" class="transparent">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--导航区域-->
+    <div class="navigator-bar">
+        <dl class="container">
+            <dt>
+                <span>全部服务分类</span>
+                <i class="iconfont icon-xiangxia2 pull-right"></i>
+                <!--这里开始是服务分类菜单-->
+                <ul class="services-category">
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-tjjg-white"></i>
+                            <span>体检机构</span>
+                            <div class="deputy">
+                                <span>年度体检</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-zkjg-white"></i>
+                            <span>专科机构</span>
+                            <div class="deputy">
+                                <span>男性 女性</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-mrys-white"></i>
+                            <span>美容养生</span>
+                            <div class="deputy">
+                                <span>SPA</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-kqhl-white"></i>
+                            <span>口腔护理</span>
+                            <div class="deputy">
+                                <span>换牙 洗牙</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-zxss-white"></i>
+                            <span>整形塑身</span>
+                            <div class="deputy">
+                                <span>整容</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-zytl-white"></i>
+                            <span>中医调理</span>
+                            <div class="deputy">
+                                <span>中医理疗</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-kjph-white"></i>
+                            <span>康健陪护</span>
+                            <div class="deputy">
+                                <span>护理 月子中心</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-24 icon-24-glyl-white"></i>
+                            <span>公立医疗</span>
+                            <div class="deputy">
+                                <span>三甲医院</span>
+                                <i class="iconfont icon-xiangyou3"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <!--服务分类子菜单区域-->
+                    <li class="services-category-children">
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">肛肠科</a>
+                                <a href="#">皮肤科</a>
+                                <a href="#">五官科</a>
+                                <a href="#">儿科</a>
+                                <a href="#">男科</a>
+                                <a href="#">妇产科</a>
+                                <a href="#">神经科</a>
+                                <a href="#">骨科</a>
+                                <a href="#">内分泌科</a>
+                            </p>
+                            <p class="ads">
+                                <a href="#"><img src="http://www.atool.org/placeholder.png?size=700x230&bg=8bc93c&fg=fff"></a>
+                            </p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="ads">
+                                <a href="#"><img src="http://www.atool.org/placeholder.png?size=700x230&bg=8bc93c&fg=fff"></a>
+                            </p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="ads">
+                                <a href="#"><img src="http://www.atool.org/placeholder.png?size=700x230&bg=8bc93c&fg=fff"></a>
+                            </p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="ads">
+                                <a href="#"><img src="http://www.atool.org/placeholder.png?size=700x230&bg=8bc93c&fg=fff"></a>
+                            </p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="ads">
+                                <a href="#"><img src="http://www.atool.org/placeholder.png?size=700x230&bg=8bc93c&fg=fff"></a>
+                            </p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="ads">
+                                <a href="#"><img src="http://www.atool.org/placeholder.png?size=700x230&bg=8bc93c&fg=fff"></a>
+                            </p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="ads">
+                                <a href="#"><img src="http://www.atool.org/placeholder.png?size=700x230&bg=8bc93c&fg=fff"></a>
+                            </p>
+                        </div>
+                        <div class="tabs-frame">
+                            <p class="child-category">
+                                <a href="#">科室1</a>
+                                <a href="#">科室2</a>
+                                <a href="#">科室3</a>
+                                <a href="#">科室4</a>
+                                <a href="#">科室5</a>
+                                <a href="#">科室6</a>
+                                <a href="#">科室7</a>
+                                <a href="#">科室8</a>
+                                <a href="#">科室9</a>
+                            </p>
+                            <p class="ads">
+                                <a href="#"><img src="http://www.atool.org/placeholder.png?size=700x230&bg=8bc93c&fg=fff"></a>
+                            </p>
+                        </div>
+                    </li>
+                    <!--子菜单到这里结束-->
+                </ul>
+                <!--服务分类菜单到这结束-->
+            </dt>
+            <dd>
+                <a href="#">首页</a>
+                <a href="#">今日特惠</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="container manage">
+        <!--左侧category-->
+        <div class="category">
+            <ul>
+                <li>
+                    <ul>
+                        <li class="title">
+                            <i class="icon-bg-manage icon-bg-manage-grzx"></i><a href="#">个人中心</a></li>
+                        <li><a href="#">会员首页</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="title"><i class="icon-bg-manage icon-bg-manage-wdyy"></i><a href="#">我的预约</a></li>
+                        <li><a href="#">专项检查预约</a></li>
+                        <li><a href="#">体检预约</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="title"><i class="icon-bg-manage icon-bg-manage-tjbg"></i><a href="#">体检报告</a></li>
+                        <li><a href="#">查看体检报告</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="title"><i class="icon-bg-manage icon-bg-manage-zhgl"></i>账户管理</li>
+                        <li class="on"><a href="#">个人资料</a></li>
+                        <li><a href="#">个人消息</a></li>
+                        <li><a href="#">绑定礼品卡</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--内容main区域-->
+        <div class="main">
+            <div class="manage-section-title">
+                <h2><span class="cn">专项检查预约</span><span class="en"> / Special inspection appointment</span></h2>
+            </div>
+            <!-- 个人消息 -->
+            <div class="tabs">
+                <ul class="tabs-handle">
+                    <li class="on"><span>所有预约</span></li>
+                    <li class=""><span>待付款</span>&nbsp<span class="count">(&nbsp2&nbsp)</span></li>
+                    <li class=""><span>未评价</span>&nbsp<span class="count">(&nbsp10&nbsp)</span></li>
+                </ul>
+                <div class="tabs-frame reserve-list">
+                    <!-- 表头 -->
+                    <dl class="title">
+                        <dt>预约</dt>
+                        <dd class="col-2">人数</dd>
+                        <dd class="col-3">价格</dd>
+                        <dd class="col-4">预约状态</dd>
+                        <dd class="col-5">操作</dd>
+                    </dl>
+                    <!-- 数据列表 -->
+                    <div class="item">
+                        <p class="title">
+                            <span>预约单号 : 201601024557745</span>
+                        </p>
+                        <dl>
+                            <dt class="col-1">
+                                <img src="http://www.atool.org/placeholder.png?size=160x120&bg=8bc93c&fg=fff" />
+                            </dt>
+                            <dd class="col-2">
+                                <p class="caption">
+                                    <a href="">口腔基础检查</a>
+                                </p>
+                                <p>
+                                    <span><i class="glyphicon glyphicon-time"></i></span><span>2015-12-10</span>
+                                </p>
+                                <p>
+                                    <a href="#"><span><i class="iconfont icon-dianpu2"></i></span><span>摩尔口腔</span></a>
+                                </p>
+                                <p>
+                                    <span><i class="iconfont icon-dingxiang2"></i></span><span>福州路555号18楼1809室(近浙江路)</span>
+                                </p>
+                            </dd>
+                            <dd class="col-3">
+                                <p>
+                                    <span>×1</span>
+                                </p>
+                            </dd>
+                            <dd class="col-4">
+                                <p>
+                                    <span>￥500</span>
+                                </p>
+                            </dd>
+                            <dd class="col-5">
+                                <p>已到店服务</p>
+                                <p><a href="javascript:void(0)">预约详情</a></p>
+                            </dd>
+                            <dd class="col-6">
+                                <a href="javascript:void(0)" class="btn btn-green btnShowMask">评价</a>
+                            </dd>
+                        </dl>
+                        <!-- 预约详情 -->
+                        <div class="booking-details hide">
+                            <div class="booking-item">
+                                <div class="pull-left booking-time">
+                                    2015-01-10
+                                </div>
+                                <div class="booking-info">
+                                    <span class="icon-bg-manage icon-gray-circle circle"></span>
+                                    <div>
+                                        <span>请您对这次机构的服务</span><a href="javascript:void(0)" class="btnMask">评价</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking-item">
+                                <div class="pull-left booking-time">
+                                    2015-01-10
+                                </div>
+                                <div class="booking-info">
+                                    <span class="icon-bg-manage icon-green-circle circle"></span>
+                                    <div>
+                                        <span>摩尔口腔已确认你到店，感谢您的光临。</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking-item last">
+                                <div class="pull-left booking-time">
+                                    2015-12-10
+                                </div>
+                                <div class="booking-info">
+                                    <span class="icon-bg-manage icon-green-circle circle"></span>
+                                    <div>
+                                        <span>您的预约日期</span><span class="booking-date">2016-01-01</span><span>，验证码</span><span class="validate-code">678942</span><span>。</span><span>请您持卡到店验证，以保障服务质量及权益</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="op">
+                                <span>收起</span><span><i class="iconfont icon-xiangshang3"></i></span>
+                            </div>
+                        </div>
+                        <!-- 评价列表 -->
+                        <div class="mark-list hide">
+                            <table>
+                                <tr>
+                                    <td class="mark-options">
+                                        <h4>你的感受</h4>
+                                        <input type="radio" name="feel" id="" data-for="good"> <span>好评</span>
+                                        <input type="radio" name="feel" id="" data-for="bad"> <span>差评</span></td>
+                                    <td class="line">
+                                        <span></span>
+                                    </td>
+                                    <td class="mark-options-item">
+                                        <span class="promo">请您对店面环境评价，并选择对应的标签(可多选)</span>
+                                        <ul class="hide">
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">杂乱无章</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">异味难忍</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">灯光昏暗</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">设施陈旧</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">异味难忍</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">设备齐全</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">设备齐全</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">免费停车</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">服务周到</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">热情专业</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mark-options">
+                                        <h4>店面环境</h4>
+                                        <input type="radio" name="environment" id="" data-for="good"> <span>好评</span>
+                                        <input type="radio" name="environment" id="" data-for="bad"> <span>差评</span></td>
+                                    <td class="line">
+                                        <span></span>
+                                    </td>
+                                    <td class="mark-options-item">
+                                        <span class="promo">请您对店面环境评价，并选择对应的标签(可多选)</span>
+                                        <ul class="hide">
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">杂乱无章</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">异味难忍</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">灯光昏暗</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">设施陈旧</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">异味难忍</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">设备齐全</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">设备齐全</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">免费停车</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">服务周到</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">热情专业</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="mark-options">
+                                        <h4>门店服务</h4>
+                                        <input type="radio" name="service" id="" data-for="good"> <span>好评</span>
+                                        <input type="radio" name="service" id="" data-for="bad"> <span>差评</span></td>
+                                    <td class="line">
+                                        <span></span>
+                                    </td>
+                                    <td class="mark-options-item">
+                                        <span class="promo">请您对店面环境评价，并选择对应的标签(可多选)</span>
+                                        <ul class="hide">
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">杂乱无章</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">异味难忍</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">灯光昏暗</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">设施陈旧</a>
+                                            </li>
+                                            <li data-flag="bad">
+                                                <a href="javascript:void(0)">异味难忍</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">设备齐全</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">设备齐全</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">免费停车</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">服务周到</a>
+                                            </li>
+                                            <li data-flag="good">
+                                                <a href="javascript:void(0)">热情专业</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="op">
+                                <div>
+                                    <a href="javascript:void(0)" class="btn btn-green">确定评价</a>
+                                    <a href="javascript:void(0)" class="cancel">取消</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="title">
+                            <span>预约单号 : 201601024557744</span>
+                        </p>
+                        <dl>
+                            <dt class="col-1">
+                                <img src="http://www.atool.org/placeholder.png?size=160x120&bg=8bc93c&fg=fff" />
+                            </dt>
+                            <dd class="col-2">
+                                <p class="caption">
+                                    口腔基础检查
+                                </p>
+                                <p>
+                                    <span><i class="iconfont icon-dianpu2"></i>摩尔口腔</span>
+                                </p>
+                                <p>
+                                    <span><i class="iconfont icon-dingxiang2"></i>福州路555号18楼1809室(近浙江路)</span>
+                                </p>
+                                <p>
+                                    <span><i class="glyphicon glyphicon-time"></i> 2015-12-10</span>
+                                </p>
+                            </dd>
+                            <dd class="col-3">
+                                <p>
+                                    <span>×1</span>
+                                </p>
+                            </dd>
+                            <dd class="col-4">
+                                <p>
+                                    <span>￥500</span>
+                                </p>
+                            </dd>
+                            <dd class="col-5">
+                                <p>未付款</p>
+                                <p><a href="#">预约详情</a></p>
+                            </dd>
+                            <dd class="col-6">
+                                <a href="#" class="btn btn-orange btn-block">付款</a>
+                                <a href="#" class="btn btn-grey btn-block j-drop-booking">取消预约</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!--分页器-->
+                <div class="container page">
+                    <div class="outline">
+                        <span>1-30</span>
+                        <span> / 共800条</span>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-default btn-sm">上一页</a>
+                        <a href="#" class="btn btn-default btn-sm">1</a>
+                        <a href="#" class="btn btn-default btn-sm">2</a>
+                        <span>...</span>
+                        <a href="#" class="btn btn-default btn-sm">20</a>
+                        <a href="#" class="btn btn-default btn-sm">21</a>
+                        <a class="btn btn-default btn-sm on" href="javascript:void(0)">22</a>
+                        <a href="#" class="btn btn-default btn-sm">23</a>
+                        <a href="#" class="btn btn-default btn-sm">24</a>
+                        <span>...</span>
+                        <a href="#" class="btn btn-default btn-sm">99</a>
+                        <a href="#" class="btn btn-default btn-sm">100</a>
+                        <a href="#" class="btn btn-default btn-sm">下一页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--app下载区-->
+    <div class="app-download">
+        <dl class="hotline">
+            <dt>全国免费咨询热线</dt>
+            <dd class="tel">400-728-7289</dd>
+            <dd class="memo">人群化，针对性的专属健康方案</dd>
+        </dl>
+        <dl>
+            <dt>关爱汇APP</dt>
+            <dd><img src="//source18.360guanai.com/guanaihui/css/images/app-qrcode.jpg" alt="关爱汇APP二维码"></dd>
+        </dl>
+        <dl>
+            <dt>关爱汇微信</dt>
+            <dd><img src="//source18.360guanai.com/guanaihui/css/images/webchat-qrcode.jpg" alt="关爱汇APP二维码"></dd>
+        </dl>
+    </div>
+    <!--页脚区域-->
+    <div class="footer container">
+        <span class="dbc-case">&copy; 2015</span>
+        <span>关爱汇</span>
+        <span class="dbc-case">All rights reserved.</span>
+        <span>沪</span>
+        <span class="dbc-case">ICP</span>
+        <span>备</span>
+        <span class="dbc-case">20150311-9</span>
+        <span>号</span>
+    </div>
+    <!--取消预约modal框-->
+    <div id="guanaihuiCancel" role="dialog" aria-labelledby="myModalLabel" class="modal fade in" aria-hidden="false">
+        <div role="document" class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>如取消预约，请麻烦您拨打电话。</p>
+                    <p class="tel text-green"><i class="glyphicon glyphicon-earphone"></i> 400-728-7289</p>
+                    <P>告知您的订单号、退款金额、支付方式</P>
+                    <hr>
+                    <p>客服服务时间</p>
+                    <p class="text-green">7：30至22：00(周一至周日)</p>
+                    <p><a class="btn btn-sm" data-dismiss="modal">确认</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--[if IE 6]>
+        <script src="//dev18.guanaihui.cn/guanaihui/js/compatible/DD_belatedPNG_0.0.8a-min.js"></script>
+        <script> DD_belatedPNG.fix('.pngfix'); </script>
+        <script type=”text/javascript”>  
+        // <![CDATA[ 
+        if((window.navigator.appName.toUpperCase().indexOf("MICROSOFT")>=0)&&(document.execCommand)) 
+        try{ 
+        document.execCommand("BackgroundImageCache", false, true); 
+        } 
+        catch(e){} 
+        // ]]>  
+        </script>
+        <![endif]-->
+    <!--[if lte IE 6]>        
+        <script type="text/javascript" src="//dev04.guanaihui.cn/bootstrap/plugins/bsie/bootstrap-ie.min.js"></script>
+        <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="//dev02.guanaihui.cn/guanaihui/js/compatible/html5shiv.min.js"></script>
+        <script src="//dev13.guanaihui.cn/guanaihui/js/compatible/respond.min.js"></script>
+        <script src="//dev09.guanaihui.cn/guanaihui/js/compatible/ie8-responsive-file-warning.min.js"></script>
+        <![endif]-->
+    <script src="//dev13.guanaihui.cn/apps/www.guanaihui.com/js/app.min.js"></script>
+    <script data-main="//dev07.guanaihui.cn/apps/www.guanaihui.com/jssrc/personal/special-appointment.js" src="//dev12.guanaihui.cn/guanaihui/js/require.min.js"></script>
+</body>
+
+</html>

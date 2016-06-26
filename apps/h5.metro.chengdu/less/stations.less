@@ -1,0 +1,200 @@
+@import "http://dev01.guanaihui.cn/guanaihui/less/mixins.less" ;
+* {
+    margin : 0 ;
+    padding : 0 ;
+    vertical-align : middle ;
+}
+html {
+    font-family : microsoft yahei, simsun ;    
+}
+body {
+    background : #fff ;    
+}
+li {
+    list-style : none ;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+站点地图
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.map {
+    z-index : 1 ; 
+    &>img {
+        height : 1000px ;
+        width : 1250px ;
+    }
+
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+站点地图
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.loading {
+    background : #fff ;
+    display : block ;
+    font-size : 14px ;
+    height : 100% ;
+    left : 0 ;
+    padding-top : 100px ;
+    position : fixed ;
+    text-align : center ;
+    top : 0 ;
+    width : 100% ;
+    z-index : 99 ;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+遮罩层
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.mask {
+    background : rgba(0, 0, 0, 0) ;
+    display : none ;
+    height : 100% ;
+    left : 0 ;
+    position : fixed ;
+    top : 0 ;
+    width : 100% ;
+    z-index : 100 ;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+站点圆圈符号
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.cycle {
+    background : yellow ;
+    border : 2px solid rgba(255, 0, 0, 1) ;
+    border-size : content-box ;
+    .border-radius(100px) ;
+    box-sizing : border-box ;
+    display : none ;    
+    position : absolute ;
+    z-index : 99 ;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+菜单
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.context-menu {
+    background : #fff ;   
+    border : 1px solid #ddd ;
+    .border-radius(4px) ;
+    box-shadow : 0 6px 12px #666 ;
+    display : none ;
+    min-width : 120px ; 
+    _width : ~"expression( this.offsetWidth > 120 ? 'auto' : '120px') ;" ;         
+    padding : 5px 0 ;
+    position : absolute ;
+    z-index : 103 ;
+    li {        
+        list-style : none ;
+        a {
+            display :block ;
+            color : #333 ;
+            font-size : 18px ;
+            line-height : 30px ;
+            padding : 0 10px ;
+            text-decoration : none ;
+            &:hover {
+                background : #efefef ;
+            }
+            .icon-16 {
+                margin-left : 10px ;
+            }
+        }
+    }
+    .selected-station {
+        color : #ed6d00 ;
+        font-size : 18px ;
+        font-weight : 800 ;
+        line-height : 30px ;
+        text-align : center ;
+    }
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+图标
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.icon-16 {
+    background : transparent url(images/icon-16.png) no-repeat ;
+    height : 16px ;
+    .inline-block() ;
+    width : 16px ;
+    &.terminal {
+        background-position : 0 -16px ;
+    }
+    &.start {
+        background-position : 0 -32px ;
+    }    
+    &.arrow {
+        background-position : 0 0 ;
+    }
+}
+
+.icon-24 {
+    background : transparent url(images/icon-24.png) no-repeat ;
+    height : 24px ;
+    .inline-block() ;
+    width : 24px ;
+    &.close {
+        background-position : 0 0 ;
+    }    
+}
+
+.location {
+    background : transparent url(images/location.png) no-repeat ;
+    display : none ;
+    height : 48px ;
+    position : absolute ;
+    width : 40px ;
+    z-index : 102 ;
+    &.start {
+        background-position : 0 0 ;
+    }
+    &.terminal {
+        background-position : 0 -48px ;
+    }
+}
+
+.dbc-case {
+    font-family : Arial, Helvetica, sans-serif ;
+}
+.text-important {
+    color : #ed6d00 ;
+    font-size : 14px ;
+    margin : 0 2px ;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+顶上的备注条
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.memo {
+    background : rgba(255, 255, 255, 1) ;
+    box-shadow : 4px 4px 40px rgba(0, 0, 0, .4) ; 
+    display : none ;
+    left : 0 ;
+    padding : 8px 5px ;
+    position : fixed ;
+    top : 0 ;
+    width : 100% ;
+    z-index : 110 ;
+    &>dt {
+        color : #000 ;
+        float : right ;
+        font-size : 12px ; 
+        line-height : 50px ;
+        text-align : center ;
+        width : 80px ;
+    }
+    &>dd {        
+        font-size : 12px ; 
+        line-height : 25px ;
+        margin-right : 60px ;
+    }
+    .summary {
+        text-indent : 20px ;
+    }
+    &>.close-container {
+        bottom : -18px ;
+        left : 0 ;
+        position : absolute ;
+        text-align : center ;
+        width : 100% ;
+        a {
+            .inline-block() ;
+        }
+    }
+}

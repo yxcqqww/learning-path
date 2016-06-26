@@ -1,0 +1,148 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：special/marchday.less (3月健康节)
+ 3. 作者：yinwin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../variables.less";
+@import "../mixins.less";
+.bg-box {
+    background: url(../images/special/march-body-bg.png) repeat-y;
+    #banner {
+        img {
+            width: 100%;
+        }
+    }
+    .title {
+        background: url(../images/special/bg-title.png) repeat-x;
+        height: 160px;
+        margin-top: 30px;
+        width: 100%;
+        p {
+            color: #fff;
+            font-size: 42px;
+            text-align: center;
+            &.en {
+                font-size: 20px;
+            }
+            &.cn {
+                padding-top: 25px;
+            }
+        }
+    }
+    .main {
+        width: 1090px;
+        padding-bottom: 300px;
+        margin: 0 auto;
+        .clearfix();
+        &>div {
+            border: 1px solid #f90e69;
+            float: left;
+            height: 340px;
+            margin: 40px 60px 0 1px;
+            padding: 20px;
+            position: relative;
+            width: 300px;
+            .border-radius(5px);
+            i.number {
+                background: url(../images/special/bg-number.png) no-repeat;
+                color: #fff;
+                font-size: 16px;
+                font-style: normal;
+                height: 44px;
+                line-height: 35px;
+                left: -3px;
+                padding-left: 5px;
+                position: absolute;
+                top: -8px;
+                width: 78px;
+                .inline-block();
+            }
+            dl {
+                dt {
+                    border: 1px solid #fe6f83;
+                    font-weight: 500;
+                    margin: 0 auto;
+                    img {
+                        height: 182px;
+                        width: 256px;
+                    }
+                }
+                dd {
+                    line-height: 30px;
+                    &.caption {
+                        color: #333;
+                        font-size: 22px;
+                        margin: 20px 0;
+                        .text-ellipsis();
+                    }
+                    p {
+                        color: #f90e69;
+                        font-size: 20px;
+                        margin-bottom: 0;
+                        &.old {
+                            color: #989898;
+                            font-size: 12px;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+            .btn-buy {
+                background-color: #f90e69;
+                bottom: 15px;
+                color: #fff;
+                font-size: 16px;
+                padding: 10px 30px;
+                position: absolute;
+                right: 10px;
+                .border-radius(5px);
+            }
+        }
+    }
+}
+
+.ribbon {
+    background: url(../images/special/ribbon.png);
+    position: absolute;
+    .inline-block();
+}
+
+.icon-ribbon1 {
+    height: 240px;
+    width: 150px;
+    left: -150px;
+    top: 20px;
+}
+
+.icon-ribbon2 {
+    background-position: 0 -240px;
+    height: 240px;
+    width: 150px;
+    right: -150px;
+    top: 20px;
+}
+
+.icon-ribbon3 {
+    background-position: 0 -780px;
+    height: 65px;
+    width: 125px;
+    right: -125px;
+    top: 120px;
+}
+
+.icon-ribbon4 {
+    background-position: 0 -600px;
+    height: 120px;
+    width: 125px;
+    left: -140px;
+    bottom: -20px;
+}
+
+.icon-ribbon5 {
+    background-position: 0 -920px;
+    height: 120px;
+    width: 125px;
+    left: -140px;
+    bottom: -100px;
+}

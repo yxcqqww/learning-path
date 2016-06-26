@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>登录 - 关爱汇控制台</title>
+        <meta name="keywords" content="">
+        <meta name="description" content=""> 
+        <!-- 引入stylesheet资源 -->
+        <link rel="stylesheet" href="//dev01.guanaihui.cn/bootstrap/3.3.4/css/bootstrap.min.css">        
+        <link rel="stylesheet" href="//dev01.guanaihui.cn/apps/admin.guanaihui.com/css/app.min.css">
+        <link rel="stylesheet" href="//dev01.guanaihui.cn/apps/admin.guanaihui.com/css/console/login.min.css">
+    </head>
+    <body>
+        <div class="bg-warning browser-test">            
+            <div class="container">
+                本系统不支持您所使用的浏览器，您将不能正常登录！请下载指定的浏览器及版本：
+                <a href="http://www.firefox.com.cn/">Mozilla Firefox 最新版本</a> | <a href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html">Google Chrome最新版本</a>
+            </div>
+        </div>
+        <div class="container system-title">
+            <h2><img src="//dev01.guanaihui.cn/guanaihui/css/images/guanaihui-17050.png"><span>后台管理系统 </span><span class="roman">V 2.0</span></h2>
+            <small class="pull-right"></small>            
+        </div>
+        <div class="banner">
+            <div class="login-panel">
+                <form action="../home/index.html" method="get" class="validate">
+                    <div class="form-group">
+                        <label>用户名：</label>
+                        <input type="text" class="form-control ime-disabled" name="username" maxlength="24" placeholder="不大于24位的字母数字组合" data-validation-engine="validate[required]">
+                    </div>
+                    <div class="form-group">
+                        <label>密码：</label>
+                        <input type="password" class="form-control" name="password" placeholder="">
+                    </div>
+                    <div class="form-group">                        
+                        <label> 记住用户名：</label>
+                        <div class="remember"><input type="checkbox" checked></div>
+                    </div>
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="登录">
+                </form>
+            </div>
+        </div>
+        <div class="container copyright">
+            <ul class="pull-left">
+                <li>关爱汇 — 互联网健康产业的信息服务平台 | 人群化，针对性的专属健康方案</li>                
+                <li>
+                    <span class="dbc-case">Copyright © 2014-2015</span> 
+                    <span>且康健康管理咨询（上海）有限公司.</span>
+                    <span class="dbc-case">All rights reserved. </span>
+                </li>
+            </ul>
+            <ul class="pull-right">
+                <li><span>全国免费咨询热线：</span><span class="tel">400-728-7289</span></li>                
+            </ul>
+        </div>
+        <script src="//dev01.guanaihui.cn/apps/admin.guanaihui.com/js/app.min.js"></script>     
+        <script data-main="//dev01.guanaihui.cn/apps/admin.guanaihui.com/js/console/login.min.js" src="//dev01.guanaihui.cn/guanaihui/js/require.min.js"></script>        
+    </body>
+</html>

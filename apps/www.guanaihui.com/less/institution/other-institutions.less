@@ -1,0 +1,108 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：institution/other-institutions.less (机构列表页 - 其他热门机构)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.other-institutions {
+    border: 1px solid @lighter-line-gray-color ;
+    border-top: 3px solid @green-color ;
+    padding: 0;
+    .header-pagination {
+        background: @lighter-block-gray-color ;
+        .clearfix();
+        h2 {
+            color: @green-color ;
+            float: left;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 50px;
+            margin: 0;
+            text-indent: 15px;
+        }
+        ul {
+            float: right;
+            .clearfix();
+            margin: 15px;
+            li {
+                background: #ccc;
+                .border-radius(100px);
+                cursor: pointer;
+                float: left;
+                height: 15px;
+                margin: 0 3px;
+                width: 15px;
+                &.on {
+                    background: @green-color ;
+                }
+            }
+        }
+    }
+    .content {
+        .clearfix();
+        dl {
+            float: left;
+            padding: 15px 0;
+            width: 25%;
+            dt {
+                text-align: center;
+                img {
+                    height: 180px;
+                    width: 270px;
+                }
+            }
+            dd {
+                padding: 0 12px;
+                .text-ellipsis();
+            }
+            .headline {
+                .clearfix();
+                line-height: 35px;
+                h4 {
+                    float: left;
+                    a {
+                        color: @dark-font-color ;
+                        font-size: 16px;
+                        &:hover {
+                            color: @green-color ;
+                        }
+                    }
+                }
+                .icon-group {
+                    float: right;
+                }
+            }
+            .evaluation {
+                .star-group {
+                    .points {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .summary {
+                .memo {
+                    color: @default-font-color ;
+                    font-size: 12px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}
+
+.BMap_bubble_content {
+    padding-bottom: 10px;
+    dl {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .clearfix();
+        dt {
+            float: left;
+            margin-right: 10px;
+        }
+        dd {
+            overflow: hidden;
+        }
+    }
+}

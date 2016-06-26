@@ -1,0 +1,86 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：admin.guanaihui.com前端MVC框架
+ 2. 文件名称：role->list.less (系统设置->角色管理)
+ 3. 作者：yinqing@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../variables.less";
+@import "../mixins.less";
+
+/*************
+.quick-panel .content>dl.perm-ids {
+    display: block;
+    dd {
+        border: 1px solid #ccc;
+        display: block;
+        margin-top: 10px;
+        padding: 20px;
+        .border-radius(4px);
+        .checkbox label {
+            padding: 5px 10px;
+        }
+        .checkbox-inline {
+            margin-bottom: 10px;
+        }
+    }
+}
+********************/
+
+.perm-ids {
+    &>div.role-box {
+        border: 1px solid @lighter-line-gray-color;
+        padding: 0;
+        margin: 15px;
+        &>h3 {
+            background-color: @lighter-line-gray-color;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            a.empty {
+                font-size: 12px;
+            }
+        }
+        &>ul {
+            height: 200px;
+            overflow-y: scroll;
+            &>li {
+                font-size: 12px;
+                padding: 10px;
+                text-align: center;
+                .clearfix();
+                &.active,
+                &:hover {
+                    background: @lighter-block-gray-color;
+                    color: @blue-color;
+                    span.remove {
+                        display: block;
+                    }
+                }
+                span.remove {
+                    display: none;
+                    float: right;
+                    i {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &.role-tool {
+            border: none;
+            &>ul {
+                overflow: hidden;
+                padding-top: 90px;
+                a {
+                    background-color: @lighter-line-gray-color;
+                    display: block;
+                    padding: 10px;
+                    margin: 25px 15px;
+                    text-align: center;
+                    .border-radius(5px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+<!--预约弹出页面-->
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+<div class="tabs box">
+    <ul class="tabs-handle">
+        <li class="on"><a href="#">登录</a></li>
+        <li><a href="#">注册</a></li>
+    </ul>
+    <div class="tabs-frame">
+        <div class="login-form">
+            <!--表单区域-->
+            <div class="container">
+                <div class="content">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <dl>
+                                <dt>手机号</dt>
+                                <dd>
+                                    <input type="text" autocomplete="off" class="form-control" id="txtMobile" name="mobile" placeholder="请输入手机号码" data-validation-engine="validate[required,custom[mobile]]" data-errormessage-value-missing="手机号码不能为空">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="form-group">
+                            <dl>
+                                <dt>验证码</dt>
+                                <dd>
+                                    <input type="text" autocomplete="off" class="form-control" id="txtValidateCode" name="validateCode" data-validation-engine="validate[required]" data-errormessage-value-missing="验证码不能为空">
+                                </dd>
+                                <dd>
+                                    <img src="http://www.atool.org/placeholder.png?size=80x40&amp;bg=9BCE3B&amp;fg=fff" alt="验证码">
+                                    <span class="change">换一张</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="form-group">
+                            <dl>
+                                <dt>短信动态码</dt>
+                                <dd>
+                                    <input type="text" autocomplete="off" class="form-control" id="txtSmsCode" name="smsCode">
+                                </dd>
+                                <dd>
+                                    <button type="submit" class="btn" id="btnGetSmsCode">获取动态码</button>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="form-group">
+                            <dl>
+                                <dt></dt>
+                                <dd>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> <span>两周内免登录</span>
+                                        </label>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="form-group">
+                            <dl>
+                                <dt></dt>
+                                <dd>
+                                    <button type="submit" class="btn" id="btnLogin">登录</button>
+                                </dd>
+                            </dl>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs-frame">
+        <!--表单区域-->
+        <div class="register-form">
+            <div class="container">
+                <div class="content">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <dl>
+                                <dt>手机号</dt>
+                                <dd>
+                                    <input type="text" class="form-control" autocomplete="off" id="txtRegisterMobile" name="mobile" placeholder="请输入手机号码" data-validation-engine="validate[required,custom[mobile]]" data-errormessage-value-missing="手机号码不能为空">
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="form-group">
+                            <dl>
+                                <dt>验证码</dt>
+                                <dd>
+                                    <input type="text" class="form-control" autocomplete="off" id="txtRegisterValidateCode" name="validateCode" data-validation-engine="validate[required]" data-errormessage-value-missing="验证码不能为空">
+                                </dd>
+                                <dd>
+                                    <img src="http://www.atool.org/placeholder.png?size=80x40&amp;bg=9BCE3B&amp;fg=fff" alt="验证码">
+                                    <span class='change'>换一张</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="form-group">
+                            <dl>
+                                <dt>短信动态码</dt>
+                                <dd>
+                                    <input type="text" class="form-control" autocomplete="off" id="txtRegisterSmsCode">
+                                </dd>
+                                <dd>
+                                    <button type="submit" class="btn" id='btnRegisterGetSmsCode'>获取动态码</button>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="form-group">
+                            <dl>
+                                <dt></dt>
+                                <dd>
+                                    <button type="submit" class="btn" id='btnRegister'>注册</button>
+                                </dd>
+                            </dl>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

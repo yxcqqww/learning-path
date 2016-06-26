@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+       <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <script src="jquery.min.js"></script> 
+	    <script src="TouchSlide.1.1.js"></script>
+	    
+        <title>地铁我行移动客户端下载</title>
+        <style type="text/css">
+        	*{margin:0;padding:0;}
+        	
+			.wrap,.h5AppBg{ 
+				position:relative;
+			}
+			.h5AppBg img{
+				width:100%;
+				position:absolute;
+				top:0;
+				left:50%;
+				transform:translateX(-50%);
+
+			}
+			.h5AppBg .divImg{
+				position:relative;
+				left:50%;				
+				transform:translateX(-50%);				
+				padding-top:30%;	
+				z-index:100;
+			}
+			.divImg img.ipBng{
+				width:58.2375%;	
+				padding-top:30%;			
+			}
+			 
+
+			.wrap .loadApp{padding-top:130%;}
+			.loadApp .imgCon {
+				width:100%;				
+				text-align:center;
+			}
+			.loadApp .imgCon a{text-decoration:none;}
+			.loadApp .imgCon a img{width:34.375%;} 
+			.wrap .loadApp a:nth-child(2) img{margin-left:4.375%;}
+				
+				
+			
+			/* 本例子css -------------------------------------- */
+			.focus {
+				width:50%;
+				margin:0 auto;
+				/* height: 150px; */
+				margin: 0 auto;
+				position: absolute;
+				/* overflow: hidden; */
+				z-index:100000;
+				left:50%;
+				transform: translateX(-50%);
+				-webkit-transform: translateX(-50%);
+				padding-top:43.5975%;
+				top:0;
+			}
+			.focus .hd {
+				width: 100%;
+				height: 12px;
+				position: absolute;
+				z-index: 100;
+				padding-top:220%;
+				text-align: center;
+			}
+			.focus .hd ul {
+				/* overflow:hidden; */
+				width:100%;
+/* 				height:12px; */
+				font-size:0;	
+				text-align:center;
+			}
+			.focus .hd ul li {
+				width:20px;
+				height:3px;
+				display:inline-block;
+				background-color:#FFB27F;
+			}
+			.focus .hd ul .on {
+				background: #FF6600;
+			}
+			
+			.focus .bd {
+				position: relative;
+				z-index: 0;
+			}
+			.focus .bd li img {
+				width: 100%;
+				/* height: 150px; */
+			}
+			.focus .bd li a {
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 取消链接高亮 */
+			}
+
+
+			#content{
+				position:absolute;
+				padding-top:135%;
+				top:0;
+				width:100%;
+				left:0;
+
+			}
+			#content h4,#content p{
+				text-align:center;
+				line-height:30px;
+			}
+        </style> 
+                                  
+    </head>
+    <body>
+	    <div class="wrap">
+	    	<div class="h5AppBg">
+	    		<img src="h5_download.jpg">
+	    		<div class="divImg">
+		    		<img  class="ipBng" src="ipbg.png">
+	    		</div>
+	    	</div>
+	    	<div id="focus" class="focus">
+				<div class="hd">
+					<ul></ul>
+				</div>
+				<div class="bd">
+					<ul style="width:100%;">
+						<li><a href="#"><img src="a1.jpg" style="width:100%; height:auto;" /></a></li>
+						<li><a href="#"><img src="a2.jpg" style="width:100%; height:auto; " ></a></li>
+						<li><a href="#"><img src="a3.jpg" style="width:100%; height:auto; " /></a></li>
+						<li><a href="#"><img src="a4.jpg" style="width:100%; height:auto; " /></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		    <!-- 本例主要代 码 Start ================================ -->
+			
+			<script type="text/javascript">
+				TouchSlide({ 
+					slideCell:"#focus",
+					titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+					mainCell:".bd ul", 
+					effect:"leftLoop", 
+					autoPlay:true,//自动播放
+					autoPage:true, //自动分页
+					endFun:function(i,c){
+						var slider={};
+				    	slider.data= [
+				            {
+				                "id":"slide-img-1",
+				                "client":"乘坐地铁必备神器",
+				                "desc":"不清楚线路？站内找不到卫生间？用它就对了"
+				            },
+				            {
+				                "id":"slide-img-2",
+				                "client":"精美商品独一无二",
+				                "desc":"您值得拥有最好的"
+				            },
+				            {
+				                "id":"slide-img-3",
+				                "client":"吃喝玩乐，紧随你行",
+				                "desc":"搜罗各站点周边商铺，方便更实惠"
+				            },
+				            {
+				                "id":"slide-img-4",
+				                "client":"参加公益活动",
+				                "desc":"帮他人渡过难关，帮自己活得精彩"
+				            },
+				            {
+				                "id":"slide-img-5",
+				                "client":"地铁消息及时送达",
+				                "desc":"告诉您想知道的"
+				            },
+				    	];
+				    	console.log(slider.data[i].client);
+				    	$('#content').html('');
+				    	var $content='<h4>'+slider.data[i].client+'</h4>'+'<p>'+slider.data[i].desc+'</p>';
+				    	$('#content').append($content)
+						// $('#content').html(slider.data[i].client);
+						// console.log($('#content').html());
+					}
+			});
+			</script>
+			<!-- 本例主要代码 End ================================ -->
+			<div id="content"></div>
+			
+	    	<div class="loadApp">
+	    		<div class="imgCon">
+		    		<a href="#">
+		    			<img src="h5-download01.png">
+		    		</a>
+		    		<a href="#">
+		    			<img src="h5_download02.png">
+		    		</a>						
+	    		</div>				
+			</div>
+		</div>
+
+		<script>
+		    function getShareContent(showType) {
+		        var obj = {
+		          shareIcon: '',
+		          shareDesc: '百万成都地铁族出行必备神器 ，立即下载“地铁',
+		          shareTitle: '我行”将有惊喜好礼',
+		        };
+		       var result = JSON.stringify(obj);
+		       if (showType==0){
+		            window.share.receivedShareContent(result);
+		       }
+		       else{
+		           return result;    
+		       }
+		  	}
+	    </script>
+    </body>
+</html>

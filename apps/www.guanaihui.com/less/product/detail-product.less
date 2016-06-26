@@ -1,0 +1,163 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：product/detail.less (产品详情页面)
+ 3. 作者：liuchangkui@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../mixins.less";
+@import "../variables.less";
+@import "./detail-product-fixed.less"; //页面滚动顶部fixed
+@import "./detail-description.less"; //产品描述
+@import "./detail-suit-store.less"; //试用门店
+@import "./detail-layout-right.less"; //右侧内容
+body {
+    background-color: #fafafa;  
+}
+
+.container {
+    .clearfix();
+    .layout-left {
+        margin-right: 230px; 
+    }
+    .layout-right {
+        float: right;
+        width: 215px;
+        text-align: center;
+    }
+}
+
+
+/********bootstrap 样式*************/
+
+.btn-warning {
+    color: #fff;
+    background-color: @orange-color;
+    border-color: @orange-color;
+}
+
+.btn-lg {
+    padding: 10px 35px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+产品描述
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.description {
+    dt {
+        img {
+            width: 475px;
+            height: 335px;
+        }
+    }
+    dd {
+        h1 {
+            margin-bottom: 6px;
+        }
+    }
+    .des {
+        height: auto !important;
+        li {
+            display: inline-block;
+            margin-right: 8px;
+            &:before {
+                content: "·";
+            }
+        }
+    }
+    .price {
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+        span {
+            display: inline-block;
+            vertical-align: text-bottom;
+            &.current-price {
+                font-size: 2rem;
+                em {
+                    font-size: 3.5rem;
+                    vertical-align: text-bottom;
+                }
+            }
+            &.original-price {
+                text-decoration: line-through;
+            }
+        }
+    }
+    .prop-crowds {
+        margin-top: @gap-dimension;
+    }
+    .crowds {
+        div {
+            display: inline-block;
+            margin-right: 8px;
+            border: 1px solid @green-color;
+            padding: 3px 20px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            i {
+                vertical-align: top;
+                display: none;
+            }
+            &.selected {
+                background-color: @green-color;
+                color: #FFF;
+                i {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+.suit-store {
+    dt {
+        color: #777 !important;
+        font-size: 1.4rem !important;
+        padding-left: @gap-dimension !important;
+    }
+    dd {
+        padding-left: @gap-dimension !important;
+        border-bottom: 1px solid #f7f7f7;
+        &.no-border {
+            border-bottom: 1px solid #FFF;
+        }
+    }
+    &.grey {
+        dl {
+            dt {
+                background-color: #eceff1;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+.pack-special{
+    background-color: #fff;
+    color: #666;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 15px;
+}
+#bdshare_weixin_qrcode_dialog {
+    height: 310px !important;
+    width: 250px !important;
+}
+.fixed-mode {
+    .original-price {
+        text-decoration: line-through;
+    }
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
+    background-color: #fff;
+}
+
+.package-des {
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}

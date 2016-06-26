@@ -1,0 +1,270 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：home/aboutUs.less (关于我们)
+ 3. 作者：yuxiaochen@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../mixins.less";
+@import "../variables.less";
+
+body {
+    background-color: @lighter-block-gray-color;
+}
+
+.aboutUs{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	position: relative;
+	.category{
+		background-color: #f1f1f1;
+		color:@default-font-color;
+		font-size: 14px;
+		width: 220px;
+		height: 500px;
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		.title{
+			color: @dark-font-color;
+			font-size: 18px;
+			height: 50px;
+			border-bottom: 1px solid #e5e5e5;
+			line-height: 50px;
+			padding-left: 5px;
+			margin-bottom: 20px;
+		}
+
+		li{
+			 padding: 10px 0 10px 20px;
+			 &.on{
+			 	 color: @dark-font-color;
+			 	 padding-left: 17px;
+                 border-left: 3px solid @darker-green-color;
+			 }
+		}
+	}
+	.main{
+		background-color: #fff;
+		margin-left: 220px;
+		padding-left: 90px;
+		padding-top: 25px;
+		padding-bottom: 5px;
+		.item
+		{
+			margin-bottom: 115px;
+			font-size: 15px;
+			line-height: 35px;
+		}
+
+		.caption{
+			position: relative;
+			margin-bottom: 30px;
+			.clearfix();
+			dt{
+				float: left;
+			}
+			.ch{
+				font-size: 30px;
+				font-weight: 500;
+				color: #666;
+				top: 15px;
+				left: 80px;
+				position: absolute;
+			}
+
+			.en{
+				font-size: 20px;
+				top: 55px;
+				left: 70px;
+				position: absolute;
+			}
+		}
+	
+		.first-letter
+		{
+			font-size: 30px;
+			font-weight: 400;
+			display: inline-block;
+    		margin-left: 20px;
+    		margin-top: -10px;
+    		margin-bottom: 0px; 
+		}
+
+		.other-letters{
+			display: inline;
+		}
+
+		.mark{
+			float: left;
+    		height: 25px;
+    		width: 25px;
+    		background-color: white;
+    		position: relative;
+    		margin-right: 20px;
+
+    		.gray{
+				background-color: #e6e6e6;
+    			width: 20px;
+    			height: 20px;
+    		}
+
+    		.green{
+				width: 15px;
+    			height: 15px;
+    			background-color: @link-hover-color;
+    			position: absolute;
+    			top: 10px;
+    			left: 10px;
+    		}
+		}
+
+		.story{
+			.intro1{
+				position: relative;
+				margin-bottom: 20px;
+				.content{
+					color: #fff;
+					width: 260px;
+					height: 190px;
+					position: absolute;
+					bottom: 55px;
+					left: 600px;
+				}
+			}
+			.intro2{
+				margin-bottom: 40px;
+				img{
+					margin-right: 20px;
+				}
+			}
+		}
+
+		.concept
+		{
+			position: relative;
+
+			hr{
+				border: 1px solid #fff;
+   				margin: 5px 1px;
+    			display: block;
+			}
+
+			.intro{				
+				width: 675px;
+				height: 145px;
+				background: rgba(0,0,0,0.5) none repeat scroll 0 0;
+    			position: absolute;
+    			bottom: -75px;
+   				left: 100px;
+
+   				p{
+   					padding: 10px 15px;
+    				font-size: 25px;
+    				font-weight: 400;
+   					color: #fff;
+   					.strong{
+   						color:  @link-hover-color;
+   						font-weight: 400;
+   					}
+   				}
+			}
+		}
+
+		.responsibility
+		{	
+			.clearfix();
+			img{
+				display: inline-block;
+    			float: left;
+    			margin-right: 25px;
+			}
+
+			p{
+				margin-left: -5px;
+			}
+		}
+
+		.advantage{
+			.content{
+				.clearfix();
+				.left{
+					float: left;
+					p{
+						font-weight: 400;
+						padding-left: 35px;
+						font-size: 16px;
+						color: #fff;
+						width: 495px;
+						height: 31px;
+						background-color:@link-hover-color; 
+					}
+					
+				}
+				.mid{
+					float: left;
+					width: 70px;
+					padding: 70px 40px;
+					span{
+						display: inline-block;
+						height: 200px;
+    					width: 2px;
+    					background-color: #cccccc;
+					} 
+				}
+
+				.right{
+					float: left;
+				}
+			}
+		}
+
+		.culture{
+			.content{
+				.clearfix();
+				.left{
+					height: 175px;
+					float: left;
+					margin-right: 5px;
+					.title{
+						font-size: 20px;
+    					color: @link-hover-color;
+    					font-weight: 600;
+					}
+					.detail{
+						display: block;
+					    margin-top: -10px
+					}
+				}
+
+				.mid{
+					float: left;
+					width: 90px;
+					height: 175px;
+					background-color: @link-hover-color;
+					color: #fff;
+					font-size: 35px;
+					font-weight: 600;
+					padding: 40px 10px;
+					margin-right: 40px;
+				}
+				.right
+				{
+					padding: 45px 0px;
+					float: left;
+				}
+			}
+		}
+
+		.contactus
+		{
+			ul{
+				.clearfix();
+				margin-bottom: 20px;
+				li{
+				float: left;
+				margin-right: 55px;
+				}
+			}
+		}
+	}
+}

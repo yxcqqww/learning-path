@@ -1,0 +1,52 @@
+body {
+    background: @page-background-color ;
+    color: @default-font-color ;
+    font-size: 10px;
+    font-family: microsoft yahei, simsun;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    outline: none;
+    &:link {
+        color: @link-default-color ;
+        text-decoration: none;
+    }
+    &:visited {
+        color: @link-default-color ;
+        text-decoration: none;
+    }
+    &:hover {
+        color: @link-hover-color ;
+        text-decoration: none;
+    }
+    &:active {
+        color: @link-default-color ;
+        text-decoration: none;
+    }
+    &:focus {
+        color: @link-focus-color ;
+        text-decoration: none;
+    }
+}
+
+dl {
+    margin-bottom: 0;
+    dt {
+        font-weight: 400;
+    }
+}
+
+hr {
+    margin: @gap-dimension 0;
+    border-top: 1px dotted @lighter-line-gray-color ;
+}

@@ -1,0 +1,60 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：navigator-bar (导航 区域)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.navigator-bar {
+    background : @page-background-color ;
+    border-bottom : 1px solid @green-color ;
+    &>dl {        
+        .clearfix() ;
+        &>dt {
+            background : @green-color ; 
+            color : #fff ;
+            float : left ;
+            font-size : 14px ;
+            height : 40px ;            
+            position : relative ;            
+            width : 220px ;
+            cursor: pointer;
+            &>span {                
+                .inline-block() ;
+                line-height : 40px ;
+                text-indent : 10px ;
+                &>a {
+                    color : #fff ;
+                }
+            }
+            &>i {
+                line-height : 40px ;
+                margin-right : 10px ;
+            }
+            &>.services-category {                    
+                border-top : 1px solid #fff ;
+                left : 0 ;
+                position : absolute ;
+                top : 40px ;
+                visibility : hidden ;
+                width : 100% ;
+                z-index : 1000 ;
+            }                  
+        }
+        &>dd {
+            margin-left : 220px ;
+            padding : 5px ;
+            &>a {
+                .border-radius(3px) ;
+                color : @green-color ;
+                font-size : 12px ;
+                .inline-block() ;
+                line-height : 30px ;
+                padding : 0 10px ;
+                text-align : center ;
+                &:hover {
+                    background : @green-color ;
+                    color : #fff ;
+                }
+            }
+        }
+    }
+}

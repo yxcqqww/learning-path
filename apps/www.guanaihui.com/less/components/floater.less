@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：floater (页面悬浮在右边的回到顶部及在线咨询的条)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.floater {     
+    background : @green-color ;
+    .border-radius(5px) ;
+    top : 45% ;    
+    position : fixed ;
+    right : 2% ;
+    width : 40px ;
+    &>a {        
+        color : #fff ;
+        display : block ;
+        font-size : 12px ;        
+        //padding : 5px ;
+        text-align : center ;
+        &:hover {
+            background : @darker-green-color ;
+        }
+        &>span {
+            display : block ;
+            line-height : 18px ;
+            padding : 0 5px ;
+        }
+    }
+    &>.back-top {
+        border-bottom : 1px solid #fff ;
+        .border-top-radius(5px) ;
+    }
+    &>.consultation {
+        .border-bottom-radius(5px) ;
+        padding-bottom : 3px ;
+    }
+    &>.single {
+        .border-radius(5px) ;
+    }
+}

@@ -1,0 +1,24 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：pager (分页)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.page {    
+    text-align : center ;    
+    &>div {
+        .inline-block() ;
+        margin : 0 5px ;
+    }
+    span {
+        font-size : 12px ;
+        .inline-block() ;
+        line-height : @pagination-item-height ;
+    }    
+    .item {        
+        .on {
+            background : @pagination-item-on-background ;           
+            color : @pagination-item-on-font-color ;
+        }
+    }
+    
+}

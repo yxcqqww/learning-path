@@ -1,0 +1,41 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：booking/index.less (填写预约信息)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../mixins.less";
+@import "../variables.less";
+@import "./process-bar.less";
+.pay-result {
+    background-color: #fff;
+    border: 1px solid @lighter-line-gray-color;
+    text-align: center;
+    margin-bottom: 30px;
+    p {
+        font-size: 14px;
+        width: 350px;
+        margin: 30px auto;
+        .clearfix();
+        .text-orange {
+            color: @orange-color;
+        }
+        &.font-lg {
+            color: #000;
+            font-size: 30px;
+            i {
+                color: @green-color ;
+                font-size: 35px;
+                &.icon-cuowu1 {
+                    color: #cb0c24;
+                }
+            }
+        }
+        &>a {
+            background: @orange-color ;
+            color: #fff;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}

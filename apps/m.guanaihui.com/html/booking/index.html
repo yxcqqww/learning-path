@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>预约 - 关爱汇</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!-- 引入stylesheet资源 -->
+    <link rel="stylesheet" href="//dev01.guanaihui.cn/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//dev01.guanaihui.cn/apps/m.guanaihui.com/css/app.min.css">
+    <link rel="stylesheet" href="//dev01.guanaihui.cn/apps/m.guanaihui.com/css/booking/index.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="javascript:history.back();" class="back"><i class="iconfont icon-fanhui"></i></a>
+        <h1>预约</h1>
+    </header>
+    <!--服务详情-->
+    <div class="section summary">
+        <dl>
+            <dt><img src="//www.atool.org/placeholder.png?size=64x64&bg=51c002&fg=fff"></dt>
+            <dd>
+                <h1>基础口腔检查赠洁牙护理</h1>
+            </dd>
+            <dd>上海浩美齿科连锁机构</dd>
+            <dd class="des">到店基础口腔检查即赠送198元洁牙护理</dd>
+        </dl>
+    </div>
+    <!--选择体检日期-->
+    <div class="section tabs top-gap pick-date">
+        <ul class="tabs-handle">
+            <li class="on">
+                <h2>选择体检日期</h2>
+            </li>
+            <li class="date-tool">
+                <ul>
+                    <li class="tool pre"><i class="iconfont icon-xiangzuo2"></i></li>
+                    <li><span class="year">2015</span><span>年</span><span class="month">12</span><span>月</span></li>
+                    <li class="active tool next"><i class="iconfont icon-xiangyou2"></i></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="tabs-frame">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>周一</th>
+                        <th>周二</th>
+                        <th>周三</th>
+                        <th>周四</th>
+                        <th>周五</th>
+                        <th>周六</th>
+                        <th>周日</th>
+                    </tr>
+                </thead>
+                <tbody name="myDate" month="2015-12" data-today="2015-12-23">
+                </tbody>
+                <tbody name="myDate" month="2016-01">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--选择门店-->
+    <div class="select-store top-gap">
+        <ul>
+            <li class="title">选择门店</li>
+            <li class="name">上海市虹口区东宝兴路242号上海市虹口区东宝兴路242号</li>
+            <li class="tip"><span>(</span><span class="store-num">3</span><span>门店</span><span>)<i class="iconfont icon-xiangyou3"></i></span></li>
+        </ul>
+    </div>
+    <!--预约人数-->
+    <form action="">
+        <input type="hidden" name="date" id="myDate" value="">
+        <input type="hidden" name="productId" value="1" />
+        <input type="hidden" name="storeId" id="storeId" value="1" />
+        <div class="section tabs top-gap number">
+            <ul class="tabs-handle">
+                <li class="on">
+                    <h2>预约人数</h2></li>
+            </ul>
+            <div class="tabs-frame">
+                <dl>
+                    <dd>
+                        <div class="input-group">
+                            <div class="input-group-addon reduce">-</div>
+                            <input name="num" type="text" class="form-control input-sm" maxlength="4" value="1">
+                            <div class="input-group-addon add">+</div>
+                        </div>
+                    </dd>
+                    <dt><span>本次预约共</span><span>1</span><span>人</span></dt>
+                </dl>
+            </div>
+        </div>
+        <div class="fixed-toolbar">
+            <div>
+                <a href="tel:4007287283" class="btn btn-block"><i class="glyphicon glyphicon-earphone"></i>咨询客服</a>
+            </div>
+            <div>
+                <button href="javascript:;" type="submit" class="btn btn-success btn-block">确定预约</button>
+            </div>
+        </div>
+    </form>
+    <script src="//dev01.guanaihui.cn/apps/m.guanaihui.com/js/app.min.js"></script>
+    <script data-main="//dev01.guanaihui.cn/apps/m.guanaihui.com/js/booking/index.min.js" src="//dev01.guanaihui.cn/guanaihui/js/require.min.js"></script>
+</body>
+
+</html>

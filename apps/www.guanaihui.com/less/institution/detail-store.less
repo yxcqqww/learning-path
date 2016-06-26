@@ -1,0 +1,514 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：institution/details.less (机构详情页)
+ 3. 作者：liuchangkui@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../variables";
+@import "../mixins";
+// 基础信息和幻灯片模块
+#infoContainer {
+    font-size: 1.2rem;
+    height: 380px;
+    margin: 0 auto 20px;
+    min-height: 380px;
+    overflow: hidden;
+    .col-xs-6 {
+        padding: 0px;
+    }
+    #instInfo {
+        padding-right: 40px;
+        hr {
+            border: 1px solid #e3e3e3;
+        }
+        // 机构名称
+        #title {
+            padding-left: 10px;
+            h1 {
+                font-size: 2rem;
+                display: inline-block;
+                margin: 0px;
+                color: #000;
+            }
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0px 3px;
+            }
+            p {
+                margin: @gap-dimension 0;
+            }
+        }
+        &>p {
+            color: #999999;
+            font-size: 14px;
+            line-height: 28px;
+            max-height: 370px;
+            overflow: hidden;
+            padding-left: 10px;
+        }
+    }
+}
+
+// 图片轮播
+
+/*.inst-img-box {
+    border: 1px solid @lighter-line-gray-color;
+    padding: 10px;
+    position: relative;
+    .item {
+        img {
+            width: 578px;
+        }
+    }
+    .pagination {
+        background-color: @lighter-line-gray-color;
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        margin: 0;
+        .clearfix();
+        ul {
+            float: right;
+            .clearfix();
+            margin: 5px 0;
+            li {
+                cursor: pointer;
+                float: left;
+                margin: 0 5px;
+                &.on {
+                    border: 1px solid #000;
+                }
+                img {
+                    height: 75px;
+                    width: 134px;
+                }
+            }
+        }
+    }
+    .controller {
+        background: #f4f4f4;
+        cursor: pointer;
+        height: 75px;
+        line-height: 75px;
+        position: absolute;
+        width: 28px;
+        z-index: 100;
+        &.prev {
+            left: 10px;
+            top: 145px;
+        }
+        &.next {
+            right: 10px;
+            top: 145px;
+        }
+        .iconfont {
+            font-family: "宋体";
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+    }
+}
+*/
+
+.slider-for {
+    border: 1px solid @lighter-line-gray-color;
+    height: 379px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+    img {
+        margin-bottom: 10px;
+        width: 578px;
+    }
+    .prev,
+    .next {
+        background: #f4f4f4;
+        cursor: pointer;
+        height: 75px;
+        line-height: 75px;
+        position: absolute;
+        width: 28px;
+        text-align: center;
+        .inline-block();
+    }
+    .prev {
+        left: 0;
+        top: 134px;
+        z-index: 100;
+    }
+    .next {
+        right: 0;
+        top: 134px;
+        z-index: 100;
+    }
+}
+
+.slider-nav {
+    background: rgba(0, 0, 0, .5);
+    padding: 10px 0;
+    position: relative;
+    margin: -105px auto 0;
+    width: 578px;
+    img {
+        border: 1px solid #fff;
+        height: 70px;
+        margin: 5px 1px;
+        width:90px;
+        .border-radius(3px);
+    }
+}
+
+.slick-slide {
+    outline: none;
+}
+
+.slick-current {
+    img {
+        margin-top: 0;
+        transition: all 300ms ease;
+    }
+}
+
+.slick-track {
+    margin-left: auto;
+    margin-right: auto;
+}
+.opClass {
+    opacity: 0;
+    filter: Alpha(opacity=0);
+}
+
+// 优惠普检服务
+.special-service {
+    background-color: #fafafa;
+    border-top: 1px solid #dfdfdf;
+    .contain {
+        background-color: #fff;
+        padding: 0 15px 15px;
+    }
+    .con {
+        background-color: #fff;
+        //选择门店
+        .select-area {
+            padding: 15px;
+            .clearfix();
+            dt {
+                color: @green-color;
+                float: left;
+            }
+            dd {
+                margin-left: 50px;
+            }
+        }
+        .store-service {
+            padding: 0 15px;
+            position: relative;
+            .clearfix();
+            .store-list,
+            .service-list {
+                border-top: 1px solid @lighter-line-gray-color ;
+                float: left;
+            }
+            .store-list {
+                min-height: 150px;
+                width: 588px;
+                z-index: 1000;
+                .store-item {
+                    padding-right: 20px;
+                    border-left:2px solid transparent;
+                    dl {
+                        border-bottom: 1px solid @lighter-line-gray-color;
+                        padding: @gap-dimension;
+                        padding-bottom:0;
+                        .clearfix();
+                        dt {
+                            font-weight: 500;
+                            float: left;
+                            h3 {
+                                color: @green-color;
+                                font-size: 13px;
+                                margin-top: 0;
+                                margin-bottom: 10px;
+                            }
+                            p {
+                                width: 380px;
+                                margin:0;
+                                i{
+                                    font-size:16px;
+                                    color:@green-color;
+                                    cursor: pointer;
+                                    margin-left:10px;
+                                    display:inline-block;
+                                    vertical-align:0;
+                                }
+                            }
+                        }
+                        dd {
+                            margin-left: 400px;
+                        }
+                    }
+                    &.active {
+                        background-color: @lighter-block-gray-color;
+                        border-bottom: 1px solid @lighter-line-gray-color;
+                        border-left: 2px solid @green-color;
+                        border-right: none;
+                        dl {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+            .service-list {
+                background-color: @lighter-block-gray-color;
+                border-right: 1px solid @lighter-line-gray-color ;
+                border-bottom: 1px solid @lighter-line-gray-color ;
+                border-left: 1px solid @lighter-line-gray-color ;
+                min-height: 135px;
+                position: absolute;
+                top: 0px;
+                right: 15px;
+                width: 583px;
+                text-align: center;
+                .service-item {
+                    padding: 30px 0;
+                }
+                // 检查项
+                ul.checkItemList {
+                    li {
+                        .border-radius(6px);
+                        background-color: #fff;
+                        padding: 7px;
+                        border: 1px solid #d9d9d9;
+                        margin: 5px 15px;
+                        width: 425px;
+                        .clearfix();
+                        .inline-block();
+                        // 检查项图片
+                        img {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 100px;
+                            height: 75px;
+                            float: left;
+                        }
+                        // 检查项名称与支持门店
+                        .item-content {
+                            h4 {
+                                color: @default-font-color;
+                                font-size: 13px;
+                                margin-bottom: 0;
+                            }
+                            line-height: 3rem;
+                            margin-right: 100px;
+                            margin-left:104px;
+                            padding-left: @gap-dimension;
+                            vertical-align: middle;
+                            text-align:left;
+                        }
+                        // 检查项的价格
+                        .item-price {
+                            float: right;
+                            height: 78px;
+                            min-width: 78px;
+                            text-align: center;
+                            .border-radius(5px);
+                            p {
+                                color: #ffbc75;
+                                margin-bottom: 5px;
+                                &:nth-of-type(1) {
+                                    font-size: 2rem;
+                                    line-height: 2rem;
+                                    .money-icon {
+                                        font-size: 1rem;
+                                        vertical-align: text-bottom;
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    font-size: .8rem;
+                                    line-height: .8rem;
+                                    text-decoration: line-through;
+                                    .money-icon {
+                                        font-size: .6rem;
+                                        vertical-align: text-bottom;
+                                    }
+                                }
+                                &:nth-of-type(3) {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                        &:hover,
+                        &.on {
+                            border: 1px solid #ff8400;
+                            .item-content {
+                                h4 {
+                                    color: #ff8400;
+                                }
+                            }
+                            .item-price {
+                                background-color: #ff8400;
+                                P {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        &.empty {
+                            padding: 0;
+                        }
+                    }
+                }
+                .pagination {
+                    position: absolute;
+                    right: 80px;
+                    bottom: 5px;
+                    margin: 0;
+                    .clearfix();
+                    ul {
+                        .clearfix();
+                        margin: 5px 0;
+                        li {
+                            background-color: #c7c7c7;
+                            .border-radius(100px);
+                            cursor: pointer;
+                            float: left;
+                            height: 15px;
+                            margin: 0 3px;
+                            width: 15px;
+                            &.on {
+                                background: @green-color ;
+                            }
+                        }
+                    }
+                }
+                .controller {
+                    cursor: pointer;
+                    height: 75px;
+                    line-height: 75px;
+                    position: absolute;
+                    width: 28px;
+                    z-index: 100;
+                    &.prev {
+                        left: 15px;
+                        top: 145px;
+                    }
+                    &.next {
+                        right: 15px;
+                        top: 145px;
+                    }
+                    .iconfont {
+                        font-family: "宋体";
+                        font-size: 3rem;
+                        line-height: 3rem;
+                    }
+                }
+            }
+        }
+        // 地图
+        .map {
+            padding: 15px;
+            #baiduMapContainer {
+                height: 370px;
+                margin-top: 30px;
+            }
+        }
+        .page {
+            width:588px;
+            margin-top: 20px;
+            text-align: right;
+            .item {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+//cms内容模块
+#descContainer {
+    background-color: #fafafa;
+    padding-top: 20px;
+    #instDetails {
+        background-color: #fff;
+        padding-top: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+// 属性展示通用样式
+@width-prop: 60px;
+dl.prop {
+    overflow: hidden;
+    dt {
+        width: @width-prop;
+        float: left;
+        text-align: center;
+        vertical-align: middle;
+    }
+    dd {
+        margin-left: @width-prop;
+        padding-left: @gap-dimension;
+        vertical-align: middle;
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 模态窗口开始 */
+#myModal{
+    .modal-dialog{
+        width:1165px;
+        height:375px;
+        .modal-content{
+            position:relative;
+            .modal-header{
+                padding:0;
+                position:absolute;
+                right:0;
+                top:0;
+                z-index:999;
+                width:45px;
+                height:45px;
+                background-color: #fff;
+                text-align:center;
+                line-height:45px;
+                button{
+                    margin-top: 0px;
+                    display: block;
+                    height: 45px;
+                    width: 45px;
+                    text-align: center;
+                    line-height: 45px;
+                    font-size:20px;
+                    span{
+                    font-size:40px;
+                    }
+                }
+            }
+            .modal-body{
+                padding:0px;
+            }
+        }
+    }
+}
+
+.BMap_bubble_content {
+    padding-bottom: 10px;
+    dl {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .clearfix();
+        dt {
+            float: left;
+            margin-right: 10px;
+        }
+        dd {
+            overflow: hidden;
+        }
+    }
+}
+

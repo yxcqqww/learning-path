@@ -1,0 +1,62 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：admin.guanaihui.com前端MVC框架
+ 2. 文件名称：login.less (登录)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../mixins.less" ;
+@import "../variables.less" ;
+.browser-test {    
+    color : #c00 ;
+    display : none ;
+    font-size : 1.2rem ;
+    line-height : 40px ;
+}
+
+.system-title {
+    padding : @gap-dimension ;
+    h2 {
+        .inline-block() ;
+        margin : @gap-dimension ;
+    }
+    .roman {
+        font-family : Times New Roman, Times, serif ;
+        font-size : 3.5rem ;
+    }
+}
+
+.banner {
+    background : transparent url(../images/login-banner.jpg) repeat-x 0 0 ;    
+    height : 480px ;
+    padding-top : 60px ; 
+    .login-panel {
+        background : rgba(255, 255, 255, .8) ;
+        .border-radius(5px) ;
+        box-shadow : 0 20px 20px rgba(0, 0, 0, 1) ; 
+        height : 360px ;
+        margin : 0 auto ;
+        width : 400px ;
+        form {
+            padding : 30px 20px ;
+        }
+    }
+    label {
+        font-size : 1.4rem ;
+    }
+    .remember {
+        .inline-block() ;
+    }
+}
+
+.copyright {
+    padding : @gap-dimension ;
+    &>ul {
+        &>li {
+            font-size : 1.2rem ;
+            line-height : 25px ;
+        }
+    }
+    .tel {
+        color : @blue-color ;
+        font-size : 2.2rem ;
+    }
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>商户分店列表 - 关爱汇控制台</title>
+        <meta name="keywords" content="">
+        <meta name="description" content=""> 
+        <!-- 引入stylesheet资源 -->
+        <link rel="stylesheet" href="//dev01.guanaihui.cn/bootstrap/3.3.4/css/bootstrap.min.css">        
+        <link rel="stylesheet" href="//dev01.guanaihui.cn/apps/admin.guanaihui.com/css/app.min.css">        
+    </head>
+    <body>
+        <!--侧边栏-->
+        <div class="aside" data-status="open">
+            <dl class="account">
+                <dt><img src="//dev01.guanaihui.cn/apps/admin.guanaihui.com/css/images/default-portrait.jpg" class="img-circle"></dt>
+                <dd class="role-switcher" data-toggle="tooltip" data-placement="bottom" title="切换角色">
+                    <span class="role">BManager</span>
+                    <span class="caret"></span>
+                </dd>
+                <dd><span>上海分站 | </span><i class="online-status"></i><span>在线</span></dd>
+            </dl>
+            <section data-status="open">
+                <a class="parent" href="#">
+                    <div class="addon"><i class="iconfont icon-pingguo"></i></div>
+                    <div class="handle"><i></i></div>                 
+                    <div class="description">APP管理</div>                  
+                </a>
+                <div class="child">    
+                    <a href="#">
+                        <div class="addon"><i class="iconfont icon-tuiguangguanggaowei"></i></div>                   
+                        <div class="description">广告活动</div>
+                    </a>
+                    <a href="#">
+                        <div class="addon"><i class="iconfont icon-guanli"></i></div>                   
+                        <div class="description">按钮管理</div>
+                    </a>
+                    <a href="#">
+                        <div class="addon"><i class="iconfont icon-xiaosuolvetu"></i></div>
+                        <div class="description">版本管理</div>
+                    </a>
+                    <a href="#">
+                        <div class="addon"><i class="iconfont icon-shangchuan1"></i></div>
+                        <div class="description">上传图片</div>
+                    </a> 
+                </div>
+            </section>
+            <section data-status="open">
+                <a class="parent" href="javascript:void(0);">
+                    <div class="addon"><i class="iconfont icon-dianpu2"></i></div>
+                    <div class="handle"><i></i></div>                 
+                    <div class="description">商户管理</div>                  
+                </a>
+                <div class="child">
+                    <a href="../shop/shop-categories.html">
+                        <div class="addon"><i class="iconfont icon-liebiao1"></i></div>                   
+                        <div class="description">商户分类管理</div>
+                    </a>
+                    <a href="../shop/pending-shops.html" class="on">
+                        <div class="addon"><i class="iconfont icon-dianpu2"></i></div>                   
+                        <div class="description">关爱汇商户管理</div>
+                    </a>                    
+                    <a href="../ads/list.html">
+                        <div class="addon"><i class="iconfont icon-tuiguangguanggaowei"></i></div>                   
+                        <div class="description">广告管理</div>
+                    </a>
+                    <a href="#">
+                        <div class="addon"><i class="iconfont icon-lianjie"></i></div>                   
+                        <div class="description">预约管理</div>
+                    </a>
+                    <a href="#">
+                        <div class="addon"><i class="iconfont icon-jiangpai"></i></div>                   
+                        <div class="description">商户评级管理</div>
+                    </a>
+                    <a href="../shop/check-shops.html">
+                        <div class="addon"><i class="iconfont icon-dianpu2"></i></div>                   
+                        <div class="description">关爱体检通商户管理</div>
+                    </a>
+                    <a href="check-branches-ownership.html">
+                        <div class="addon"><i class="iconfont icon-xifen"></i></div>                   
+                        <div class="description">关爱体检通门店归属</div>
+                    </a>
+                </div>
+            </section>            
+            <section data-status="open">
+                <a class="parent" href="#">
+                    <div class="addon"><i class="iconfont icon-shezhi"></i></div>
+                    <div class="handle"><i></i></div>                 
+                    <div class="description">系统设置</div>                  
+                </a>
+                <div class="child">    
+                    <a href="#">
+                        <div class="addon"><i class="iconfont icon-nanshangjia"></i></div>                   
+                        <div class="description">用户管理</div>
+                    </a>
+                    <a href="#">
+                        <div class="addon"><i class="iconfont icon-guanggaozhu"></i></div>                   
+                        <div class="description">角色管理</div>
+                    </a>   
+                </div>
+            </section>
+        </div>
+        <!--顶部蓝色条-->
+        <dl class="header">
+            <dt>
+                <img src="//dev01.guanaihui.cn/guanaihui/css/images/logo-120120.jpg" class="img-circle">
+                <span>关爱汇管理系统</span>
+            </dt>
+            <dd class="switcher"><a href="javascript:void(0);" data-toggle="tooltip" data-placement="right" title="切换菜单栏显示模式"><i class="iconfont"></i></a></dd>
+            <dd>
+                <a href="../console/login.html">
+                    <i class="iconfont icon-tuichu"></i>
+                    <span>安全退出</span>
+                </a>
+            </dd>
+            <dd class="dropdown">
+                <a href="javascript:void(0);"data-toggle="dropdown">  
+                    <img src="//dev01.guanaihui.cn/apps/admin.guanaihui.com/css/images/default-portrait.jpg" class="img-circle">
+                    <span>huagang.zhao</span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#">更新资料</a></li>
+                    <li><a href="#">修改密码</a></li>
+                </ul>
+            </dd>            
+        </dl>
+        <!--页面正文部分-->
+        <div class="content-wrapper data-panel">
+            <!--路径导航-->
+            <div class="path-navigation">
+                <a href="../home/index.html">关爱汇管理系统</a>
+                <span class="simsun">></span>
+                <a href="pending-shops.html">商户管理</a>
+                <span class="simsun">></span>
+                <a href="javascript:void(0);">商户门店列表</a>
+            </div>           
+            <!--页面标题-->
+            <h1>上海皓美齿科口腔机构 门店列表</h1>
+            <!--分割线-->
+            <hr>
+            <!--操作助手栏-->
+            <input type="hidden" value="false" id="isTjt">
+            <div class="assistant top-gap">
+                <form class="input-group searcher">                        
+                    <input type="text" class="form-control" placeholder="搜索分店">
+                    <div class="J-select"></div>
+                    <div class="input-group-addon"><button type="button" class="transparent"><i class="iconfont icon-sousuo"></i></button></div>
+                </form>
+                <div class="tools">
+                    <a class="btn btn-success add" data-href="branch.html">新增门店</a>
+                    <a class="btn btn-danger remove" data-href="">删除所选</a>
+                </div>
+            </div>
+            <!--新增门店面板-->
+            <form class="quick-panel validate"><!--这里的内容用异步加载--></form>
+            <!--分割线-->
+            <hr class="top-gap">
+            <!--表格部分-->
+            <div class="tabs-frame">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="handle"><input type="checkbox" name="row-handle"></th>
+                            <th>简称</th>
+                            <th>资源配套</th>
+                            <th>营业时间</th>
+                            <th>地址</th>
+                            <th>经度</th>
+                            <th>纬度</th>
+                            <th>轨道交通</th>
+                            <th>公共交通</th>                        
+                            <th>管理选项</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-id="1">
+                            <td class="handle"><input type="checkbox" name="row-handle"></td>
+                            <td>
+                                <span class="label label-danger">总店</span>
+                                徐家汇总店
+                            </td>
+                            <td>
+                                <span class="icon-text icon-text-parking"  data-toggle="tooltip" data-placement="top" title="有停车场">P</span>
+                                <i class="iconfont icon-xinhao" data-toggle="tooltip" data-placement="top" title="提供 WIFI"></i>
+                                <i class="iconfont icon-zhanghu" data-toggle="tooltip" data-placement="top" title="支持刷卡"></i>
+                                <span class="icon-text icon-text-hui" data-toggle="tooltip" data-placement="top" title="有优惠">惠</span>
+                                <span class="icon-text icon-text-li" data-toggle="tooltip" data-placement="top" title="有礼包">礼</span>
+                            </td>
+                            <td class="dbc-case">9:00 - 17:00</td>
+                            <td>上海市徐汇区吴中东路555号天源大厦3楼</td>
+                            <td class="dbc-case">123.56</td>
+                            <td class="dbc-case">213.48</td>
+                            <td>地铁3, 4, 9号线</td>
+                            <td>628, 716, 沪朱线</td>                            
+                            <td>
+                                <a href="javascript:void(0);" data-href="branch-add.html" class="edit dialog-handle" data-dialog-id="modal-branch"><i class="iconfont icon-bianji1"></i><span>编辑</span></a>                                                             
+                            </td>
+                        </tr>
+                        <tr data-id="2">
+                            <td class="handle"><input type="checkbox" name="row-handle"></td>
+                            <td>徐家汇分店</td>
+                            <td>
+                                <span class="icon-text icon-text-parking"  data-toggle="tooltip" data-placement="top" title="有停车场">P</span>
+                                <i class="iconfont icon-xinhao" data-toggle="tooltip" data-placement="top" title="提供 WIFI"></i> 
+                            </td>
+                            <td class="dbc-case">9:00 - 17:00</td>
+                            <td>上海市徐汇区吴中东路555号天源大厦3楼</td>
+                            <td class="dbc-case">123.56</td>
+                            <td class="dbc-case">213.48</td>
+                            <td>地铁3, 4, 9号线</td>
+                            <td>628, 716, 沪朱线</td>                            
+                            <td>
+                                <a href="javascript:void(0);" data-href="branch-add.html" class="edit dialog-handle" data-dialog-id="modal-branch"><i class="iconfont icon-bianji1"></i><span>编辑</span></a>
+                                <a href="javascript:void(0);" class="set-head"><i class="iconfont icon-shouye"></i><span>设为总店</span></a>
+                                <a href="javascript:void(0);" class="remove"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
+                            </td>
+                        </tr>
+                        <tr data-id="3">
+                            <td class="handle"><input type="checkbox" name="row-handle"></td>
+                            <td>徐家汇分店</td>
+                            <td>
+                                <span class="icon-text icon-text-hui" data-toggle="tooltip" data-placement="top" title="有优惠">惠</span>
+                                <span class="icon-text icon-text-li" data-toggle="tooltip" data-placement="top" title="有礼包">礼</span>
+                            </td>
+                            <td class="dbc-case">9:00 - 17:00</td>
+                            <td>上海市徐汇区吴中东路555号天源大厦3楼</td>
+                            <td class="dbc-case">123.56</td>
+                            <td class="dbc-case">213.48</td>
+                            <td>地铁3, 4, 9号线</td>
+                            <td>628, 716, 沪朱线</td>                            
+                            <td>
+                                <a href="javascript:void(0);" data-href="branch-add.html" class="edit dialog-handle" data-dialog-id="modal-branch"><i class="iconfont icon-bianji1"></i><span>编辑</span></a>
+                                <a href="javascript:void(0);" class="set-head"><i class="iconfont icon-shouye"></i><span>设为总店</span></a>
+                                <a href="javascript:void(0);" class="remove"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
+                            </td>
+                        </tr>
+                        <tr data-id="4">
+                            <td class="handle"><input type="checkbox" name="row-handle"></td>
+                            <td>徐家汇分店</td>
+                            <td>
+                                <i class="iconfont icon-zhanghu" data-toggle="tooltip" data-placement="top" title="支持刷卡"></i>
+                                <span class="icon-text icon-text-hui" data-toggle="tooltip" data-placement="top" title="有优惠">惠</span> 
+                            </td>
+                            <td class="dbc-case">9:00 - 17:00</td>
+                            <td>上海市徐汇区吴中东路555号天源大厦3楼</td>
+                            <td class="dbc-case">123.56</td>
+                            <td class="dbc-case">213.48</td>
+                            <td>地铁3, 4, 9号线</td>
+                            <td>628, 716, 沪朱线</td>                            
+                            <td>
+                                <a href="javascript:void(0);" data-href="branch-add.html" class="edit dialog-handle" data-dialog-id="modal-branch"><i class="iconfont icon-bianji1"></i><span>编辑</span></a>
+                                <a href="javascript:void(0);" class="set-head"><i class="iconfont icon-shouye"></i><span>设为总店</span></a>
+                                <a href="javascript:void(0);" class="remove"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
+                            </td>
+                        </tr>
+                        <tr data-id="5">
+                            <td class="handle"><input type="checkbox" name="row-handle"></td>
+                            <td>徐家汇分店</td>
+                            <td><span class="icon-text icon-text-li" data-toggle="tooltip" data-placement="top" title="有礼包">礼</span></td>
+                            <td class="dbc-case">9:00 - 17:00</td>
+                            <td>上海市徐汇区吴中东路555号天源大厦3楼</td>
+                            <td class="dbc-case">123.56</td>
+                            <td class="dbc-case">213.48</td>
+                            <td>地铁3, 4, 9号线</td>
+                            <td>628, 716, 沪朱线</td>                            
+                            <td>
+                                <a href="javascript:void(0);" data-href="branch-add.html" class="edit dialog-handle" data-dialog-id="modal-branch"><i class="iconfont icon-bianji1"></i><span>编辑</span></a>
+                                <a href="javascript:void(0);" class="set-head"><i class="iconfont icon-shouye"></i><span>设为总店</span></a>
+                                <a href="javascript:void(0);" class="remove"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
+                            </td>
+                        </tr>
+                        <tr data-id="6">
+                            <td class="handle"><input type="checkbox" name="row-handle"></td>
+                            <td>徐家汇分店</td>
+                            <td><i class="iconfont icon-xinhao" data-toggle="tooltip" data-placement="top" title="提供 WIFI"></i></td>
+                            <td class="dbc-case">9:00 - 17:00</td>
+                            <td>上海市徐汇区吴中东路555号天源大厦3楼</td>
+                            <td class="dbc-case">123.56</td>
+                            <td class="dbc-case">213.48</td>
+                            <td>地铁3, 4, 9号线</td>
+                            <td>628, 716, 沪朱线</td>                            
+                            <td>
+                                <a href="javascript:void(0);" data-href="branch-add.html" class="edit dialog-handle" data-dialog-id="modal-branch"><i class="iconfont icon-bianji1"></i><span>编辑</span></a>
+                                <a href="javascript:void(0);" class="set-head"><i class="iconfont icon-shouye"></i><span>设为总店</span></a>
+                                <a href="javascript:void(0);" class="remove"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
+                            </td>
+                        </tr>
+                        <tr data-id="7">
+                            <td class="handle"><input type="checkbox" name="row-handle"></td>
+                            <td>徐家汇分店</td>
+                            <td>&nbsp;</td>
+                            <td class="dbc-case">9:00 - 17:00</td>
+                            <td>上海市徐汇区吴中东路555号天源大厦3楼</td>
+                            <td class="dbc-case">123.56</td>
+                            <td class="dbc-case">213.48</td>
+                            <td>地铁3, 4, 9号线</td>
+                            <td>628, 716, 沪朱线</td>                            
+                            <td>
+                                <a href="javascript:void(0);" data-href="branch-add.html" class="edit dialog-handle" data-dialog-id="modal-branch"><i class="iconfont icon-bianji1"></i><span>编辑</span></a>
+                                <a href="javascript:void(0);" class="set-head"><i class="iconfont icon-shouye"></i><span>设为总店</span></a>
+                                <a href="javascript:void(0);" class="remove"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
+                            </td>
+                        </tr>
+                        <tr data-id="8">
+                            <td class="handle"><input type="checkbox" name="row-handle"></td>
+                            <td>徐家汇分店</td>
+                            <td>&nbsp;</td>
+                            <td class="dbc-case">9:00 - 17:00</td>
+                            <td>上海市徐汇区吴中东路555号天源大厦3楼</td>
+                            <td class="dbc-case">123.56</td>
+                            <td class="dbc-case">213.48</td>
+                            <td>地铁3, 4, 9号线</td>
+                            <td>628, 716, 沪朱线</td>                            
+                            <td>
+                                <a href="javascript:void(0);" data-href="branch-add.html" class="edit dialog-handle" data-dialog-id="modal-branch"><i class="iconfont icon-bianji1"></i><span>编辑</span></a>
+                                <a href="javascript:void(0);" class="set-head"><i class="iconfont icon-shouye"></i><span>设为总店</span></a>
+                                <a href="javascript:void(0);" class="remove"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
+                            </td>
+                        </tr>
+                        <tr data-id="9">
+                            <td class="handle"><input type="checkbox" name="row-handle"></td>
+                            <td>徐家汇分店</td>
+                            <td>&nbsp;</td>
+                            <td class="dbc-case">9:00 - 17:00</td>
+                            <td>上海市徐汇区吴中东路555号天源大厦3楼</td>
+                            <td class="dbc-case">123.56</td>
+                            <td class="dbc-case">213.48</td>
+                            <td>地铁3, 4, 9号线</td>
+                            <td>628, 716, 沪朱线</td>                            
+                            <td>
+                                <a href="javascript:void(0);" data-href="branch-add.html" class="edit dialog-handle" data-dialog-id="modal-branch"><i class="iconfont icon-bianji1"></i><span>编辑</span></a>
+                                <a href="javascript:void(0);" class="set-head"><i class="iconfont icon-shouye"></i><span>设为总店</span></a>
+                                <a href="javascript:void(0);" class="remove"><i class="iconfont icon-shanchu"></i><span>删除</span></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--无数据的情况-->
+                <div class="no-data text-danger">
+                    <i class="iconfont icon-chucuo"></i>
+                    <span>抱歉，找不到您想要的数据！</span>
+                </div>
+                <!--分割线-->
+                <hr>
+                <!--分页器-->
+                <div class="page">
+                    <div class="outline">
+                        <span class="dbc-case text-danger">1-10</span>
+                        <span> / 共 </span>
+                        <span class="dbc-case text-danger">800</span>
+                        <span> 条 </span>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="btn btn-default btn-sm">上一页</a>
+                        <a href="#" class="btn btn-default btn-sm dbc-case">1</a>
+                        <a href="#" class="btn btn-default btn-sm dbc-case">2</a>
+                        <span>...</span>
+                        <a href="#" class="btn btn-default btn-sm dbc-case">20</a>
+                        <a href="#" class="btn btn-default btn-sm dbc-case">21</a>
+                        <a class="btn btn-default btn-sm dbc-case on" href="javascript:void(0)">22</a>
+                        <a href="#" class="btn btn-default btn-sm dbc-case">23</a>
+                        <a href="#" class="btn btn-default btn-sm dbc-case">24</a>
+                        <span>...</span>
+                        <a href="#" class="btn btn-default btn-sm dbc-case">99</a>
+                        <a href="#" class="btn btn-default btn-sm dbc-case">100</a>
+                        <a href="#" class="btn btn-default btn-sm">下一页</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--footer部分-->
+        <div class="footer">
+            <span class="dbc-case">Copyright © 2014-2015</span> 
+            <span>且康健康管理咨询（上海）有限公司.</span>
+            <span class="dbc-case">All rights reserved. </span>
+        </div>
+        <script src="//dev01.guanaihui.cn/apps/admin.guanaihui.com/js/app.min.js"></script>     
+        <script data-main="//dev01.guanaihui.cn/apps/admin.guanaihui.com/jssrc/shop/shops.js" src="//dev01.guanaihui.cn/guanaihui/js/require.min.js"></script>        
+    </body>
+</html>

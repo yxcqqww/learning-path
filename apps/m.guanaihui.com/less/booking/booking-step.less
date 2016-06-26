@@ -1,0 +1,500 @@
+@import "../variables/global";
+
+@color-green:#96cd1f;
+
+body{
+
+  background:#FFF;
+
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  流程标题样式
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.step-title{
+
+  text-align:center;
+  font-size:1.6rem;
+  padding-top:7px;
+  width:180px;
+  height:48px;
+  color:#FFF;
+  margin:0 auto 8px auto;
+  background-size:100% 100%;
+
+  // 绿色标题
+  &.green{
+
+    background-image:url(../../css/images/title-green.png);
+
+  }
+
+  // 白色标题
+  &.white{
+
+    background-image:url(../../css/images/title-white.png);
+    color:#000;
+
+  }
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  内容面板
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.content-panel{
+
+  width:100%;
+  padding:8px;
+
+  // 预约流程
+  .booking-step-list{
+
+    dl{
+
+      padding-left:15px;
+      clear:both;
+
+      // 步骤流程
+      dt{
+        width:30px;
+        float:left;
+        border-left:1px dotted #b2b2b2;
+        border-top:1px dotted #b2b2b2;
+        position:relative;
+
+        // 圆点
+        .step-circle{
+
+          width:16px;
+          height:16px;
+          padding:1px;
+          display:block;
+          border-radius: 50%;
+          border:1px solid @color-green;
+          position:absolute;
+          top:-8px;
+          right:0;
+
+          em{
+
+            display:block;
+            text-align:center;
+            height:12px;
+            line-height:12px;
+            background:@color-green;
+            border-radius: 50%;
+            color:#FFF;
+            font-style: normal;
+
+          }
+
+        }
+
+      }
+      
+      // 步骤内容
+      dd{
+
+        margin-left:30px;
+        padding-left:8px;
+        padding-right:15px;
+
+        p{
+
+          color:@color-green;
+          font-size:1.4rem;
+          position:relative;
+          top:-8px;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+// 体检预约第一步
+#bookingStep01{
+
+  dt{
+
+    height:130px;
+
+  }
+
+  dd{
+
+    .booking-tip{
+
+      text-align:center;
+      background: url("../../css/images/tip.png");
+      background-size:100% 100%;
+      width:160px;
+      padding:8px;
+      position:relative;
+      top:-8px;
+      float:right;
+
+    }
+
+  }
+
+}
+
+// 体检预约第二步
+#bookingStep02{
+
+  dt{
+
+    height:80px;
+
+  }
+
+  dd{
+
+    a{
+
+      width:30%;
+      display:inline-block;
+      margin-right:4px;
+      position:relative;
+      top:-8px;
+      img{
+
+        width:100%;
+
+      }
+
+    }
+
+  }
+
+}
+
+// 体检预约第三步
+#bookingStep03{
+
+  dt{
+
+    height:60px;
+
+  }
+
+}
+
+// 体检预约第三步
+#bookingStep04{
+
+  dt{
+
+    height:60px;
+    border-left:0;
+
+  }
+
+}
+
+// 预约备注
+#bookingDesc{
+
+  margin-left:15px;
+  font-size:1.2rem;
+  background:#dcdcdc;
+  padding:5px;
+
+}
+
+#buycard-step-list{
+
+  margin-top:30px;
+
+  // 买卡方式一
+  #buycard-step01{
+
+    min-height:100px;
+    background:url(../../css/images/buycard-step1.png) no-repeat;
+    background-size:100% 100%;
+    position:relative;
+
+    .step-title{
+
+      position:relative;
+      top:-15px;
+
+    }
+
+    img{
+
+      float:right;
+      width:45px;
+      margin-right:10px;
+      position:absolute;
+      right:0px;
+      bottom:-10px;
+
+    }
+    .buycard-content{
+
+      margin-left:50px;
+      margin-right:60px;
+      position:relative;
+      top:-20px;
+
+      .bc-title{
+
+        color:#FFF;
+        font-size:1.4rem;
+
+      }
+      .bc-content{
+
+        color:#FFF;
+        font-size:1.2rem;
+        margin:0;
+
+      }
+
+    }
+
+  }
+  // 方式一附加信息
+  #buycard-step01-plus{
+
+    margin-top:20px;
+
+    .step-content{
+
+      border:1px solid @color-green;
+      padding:8px 2px;
+      color: @color-green;
+      display:inline-block;
+      height:60px;
+
+      &.step01{
+
+        width:35%;
+
+      }
+
+      &.step02{
+
+        width:20%;
+
+      }
+
+      &.step03{
+
+        width:28%;
+
+      }
+
+    }
+
+  }
+
+  // 方式二，三
+  #buycard-step02{
+
+    background:url(../../css/images/buycard-step2.png) no-repeat;
+    background-position: bottom center;
+    background-size:100% 100%;
+    height:320px;
+    margin-top:20px;
+    padding-left:5px;
+
+    .step02-content{
+
+      color:@color-green;
+      margin-right:45px;
+      font-size:1.2rem;
+
+      .bc-title{
+
+        font-weight:500;
+        font-size:1.4rem;
+
+      }
+
+    }
+
+    .step03-content{
+
+      color:#FFF;
+
+      .bc-title{
+
+        font-size:1.4rem;
+        margin-left:60px;
+        margin-bottom:0;
+        padding-top:10px;
+        font-weight:500;
+
+      }
+
+      ul{
+
+        list-style:none;
+        margin-left:60px;
+
+        li{
+
+          border-bottom:1px solid #FFF;
+          padding:8px 0;
+
+          p:first-of-type{
+
+            font-weight:500;
+            margin:0;
+
+          }
+          p:last-of-type{
+
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin:0;
+
+          }
+          &:last-of-type{
+
+            border-bottom:0;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  #buycard-step04{
+
+    margin-top:20px;
+    overflow:hidden;
+
+    span{
+
+      font-size:1.6rem;
+      color:@color-green;
+      margin-left:20px;
+
+    }
+
+    button{
+
+      background:url("../../css/images/gotostore-bg.png") no-repeat;
+      background-size:100% 100%;
+      padding:5px 18px 15px 5px;
+      color:#FFF;
+      border:0;
+      outline:none;
+      position:relative;
+      top:5px;
+      &:focus{
+        outline:none;
+      }
+
+    }
+
+    img{
+
+      float:right;
+      margin-right:10px;
+      width:40px;
+
+    }
+
+  }
+
+  #buycard-step05{
+
+    background:url("../../css/images/step05-bg.png");
+    background-size:100% 100%;
+    padding:10px 0;
+    p:first-of-type{
+
+      font-size:1.6rem;
+      color:#FFF;
+      margin-left:50px;
+
+    }
+    p:last-of-type{
+
+      font-size:1.2rem;
+      color:#FFF;
+      margin-left:50px;
+
+    }
+
+    img{
+
+      float:right;
+      width:40px;
+      margin-right:5px;
+
+    }
+
+  }
+
+  #enterprise-step-list{
+
+    margin-top:30px;
+
+    .step-row{
+
+      clear:both;
+
+      .step-content{
+
+        border:2px solid @color-green;
+        padding:20px 10px;
+        display:inline-block;
+        font-size:1.4rem;
+        text-align:center;
+
+      }
+
+      i{
+
+        margin:0 5px;
+
+      }
+
+    }
+
+    .contract{
+
+      p{
+
+        font-size:1.4rem;
+
+        span:first-of-type{
+
+          font-weight:600;
+
+        }
+        span:last-of-type{
+
+          color:red;
+
+        }
+
+      }
+
+      i{
+
+        float:right;
+        margin-right:35px;
+
+      }
+
+    }
+
+  }
+
+}

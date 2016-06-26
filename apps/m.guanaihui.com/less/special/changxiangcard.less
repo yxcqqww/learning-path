@@ -1,0 +1,173 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：m.guanaihui.com前端MVC框架
+ 2. 文件名称：special -> changxiangcard.less (关爱畅享卡)
+ 3. 作者：yuxiaochen@360guanai.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "../variables.less";
+@import "../mixins.less";
+@orange-color: #c99212;
+@green-color: #50a22a;
+@top-demision: 30px;
+
+/*
+  各个不同手机计算 购买体检卡和绑定畅享卡的位置的top的值
+*/
+
+.main {
+    background-image: url('../images/changxiang/bg.png');
+    background-repeat: repeat-y;
+    background-size: 100%;
+    padding: 20px 30px;
+    padding-bottom: 170px;
+    position: relative;
+    z-index: 2;
+    h4 {
+        color: @orange-color;
+        margin-bottom: 10px;
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.6rem;
+        color: @orange-color;
+        text-align: left;
+    }
+    h3 {
+        font-size: 1.8rem;
+        color: @orange-color;
+        &>span {
+            &.index {
+                .border-radius(9px);
+                background-color: @orange-color;
+                color: #fff !important;
+                font-size: 1.4rem;
+                height: 18px;
+                .inline-block();
+                margin-right: 3px;
+                padding-top: 2px;
+                text-align: center;
+                width: 18px;
+            }
+        }
+    }
+    .img {
+        text-align: center;
+        img {
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+    }
+    .title {
+        p {
+            text-indent: 1.2rem;
+        }
+    }
+    .content {
+        padding: 0 12px;
+        .cxjj {
+            &>span {
+                font-size: 1.6rem;
+                color: @orange-color;
+                &.expire-range {
+                    color: @green-color;
+                    font-size: 1.7rem;
+                }
+            }
+            .img {
+                img {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .cxty {
+            h3 {
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+            span{
+                color: @orange-color;
+                font-size: 1.4rem;
+            }
+        }
+        .cxzz {
+            .text-green {
+                font-size: 1.4rem;
+                color: @green-color;
+            }
+        }
+    }
+    .op {
+        background-image: url('../images/changxiang/op-bg.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        .clearfix();
+        height: 160px;
+        margin-left: -10px;
+        margin-right: -15px;
+        &>div {
+            width: 50%;
+            text-align: center;
+            @media screen and (max-width: 640px) {
+                padding-top: 40px;
+            }
+            @media screen and (max-width: 320px) {
+                padding-top: 28px;
+            }
+            &>span {
+                font-size: 1.2rem;
+                color: #989898;
+                margin-bottom: 5px;
+            }
+            &>p {
+                margin: 3px 0px;
+                text-align: center;
+            }
+            .btn-link {
+                font-size: 1.2rem;
+                color: @green-color;
+                text-decoration: underline;
+            }
+            &.pull-left {
+                @media screen and (max-width: 640px) {
+                    padding-top: 40px;
+                }
+                @media screen and (max-width: 320px) {
+                    padding-top: 28px;
+                }
+                &>p {
+                    border-right: 1px dashed #adadad;
+                }
+            }
+            &.pull-right {
+                .gray {
+                    margin-left: 10px;
+                }
+                @media screen and (max-width: 640px) {
+                    padding-top: 40px;
+                    .btn-link {
+                        margin-left: -12px;
+                    }
+                }
+                @media screen and (max-width: 320px) {
+                    padding-top: 28px;
+                    .btn-link {
+                        margin-left: -23px;
+                    }
+                }
+            }
+        }
+        .btn {
+            .border-radius(0px);
+            color: #fff;
+            font-size: 1.4rem;
+            background-color: #febc11;
+        }
+    }
+    .footer-img {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        right: 0;
+    }
+}
+

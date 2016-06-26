@@ -1,0 +1,54 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：product/detail.less (产品详情页面-到店礼包)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.store-package {
+    background-color: #fff;
+    padding: 15px;
+    &>div {
+        background-color: @lighter-block-gray-color ;
+        border: 1px dotted #eee;
+        padding: 20px 0;
+        &>div {
+            .clearfix();
+            a {
+                color: @default-font-color;
+                display: block;
+                float: left;
+                margin-bottom: 10px;
+                width: 25%;
+                text-align: center;
+                img {
+                    width: 135px;
+                    height: 100px;
+                }
+                dd {
+                    padding-top: 5px;
+                    &.caption {
+                        font-size: 1.4rem;
+                    }
+                    &.price {
+                        font-size: 1.2rem;
+                        .current-price {
+                            color: @orange-color;
+                        }
+                        .original-price {
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            color: @dark-font-color;
+            font-size: 1.6rem;
+            padding: 10px 0;
+            text-align: center;
+            .text-warning {
+                color: @orange-color ;
+            }
+        }
+    }
+}

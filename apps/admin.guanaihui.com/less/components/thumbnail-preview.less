@@ -1,0 +1,48 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：admin.guanaihui.com前端MVC框架
+ 2. 文件名称：thumbnail-preview.less (缩略图预览)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.thumbnail-preview {
+    .clearfix() ;
+    padding : 0 ;
+    &>li {
+        float : left ;        
+        margin : @gap-dimension ;
+        position : relative ;    
+        &.pict-placeholder {
+            border : 2px dashed @line-gray-color ;
+            height : @thumbnail-height ;
+            width : @thumbnail-width ;
+        }
+        &>img {
+            height : @thumbnail-height ;
+            width : @thumbnail-width ;
+        }
+        .handle {
+            cursor : pointer ;
+            display : none ;
+            left : @gap-dimension ;
+            position : absolute ;
+            top : @gap-dimension ;
+        }
+        .tools {
+            background : rgba(0, 0, 0, .5) ;
+            bottom : 0 ;
+            display : none ;
+            height : @thumbnail-preview-height ;
+            left : 0 ;
+            padding-left : @gap-dimension ;
+            position : absolute ;
+            width : 100% ;
+            &>a {
+                color : #fff ;
+                font-size : 1.4rem ;
+                .inline-block() ;
+                line-height : @thumbnail-preview-height ;
+                margin-right : 5px ;
+            }
+        }
+    }
+    
+}

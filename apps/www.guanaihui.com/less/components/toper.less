@@ -1,0 +1,40 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：toper (页面顶部条)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.toper {
+    background: @lighter-block-gray-color ;
+    a {
+        font-size: 12px;
+        .inline-block();
+        padding: 10px 8px;
+        &:hover { 
+            background: @light-block-gray-color ;
+        }
+    }
+    .logged {
+        position: relative;
+        &>ul {
+            background-color: #fff;
+            border: 1px solid @lighter-line-gray-color;
+            left: 0;
+            position: absolute;
+            top: 35px;
+            width: 135px;
+            &>li {
+                &>a {
+                    display: block;
+                    padding: 8px 10px;
+                    .clearfix();
+                    &>i {
+                        color: @orange-color;
+                        float: right;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+}

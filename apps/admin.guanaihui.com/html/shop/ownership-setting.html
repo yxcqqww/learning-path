@@ -1,0 +1,41 @@
+<form class="form-horizontal" id="newStoreOwnerShipForm">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <!--设置归属商户时，该门店的名字-->
+        <h4 class="modal-title">上海美年大健康 小木桥总院</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label class="col-sm-3 control-label">门店名称：</label>
+            <div class="col-sm-9">
+                <input type="text" placeholder="请输入要修改的门店名称" name="name" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">所属商户：</label>
+            <div class="col-sm-9">
+                <select name="storeList" class="form-control" placeholder="请选择所属商户">
+                    <option value="1">上海爱康国宾</option>
+                    <option value="2">上海美年大健康</option>
+                    <option value="3">上海爱康国宾</option>
+                    <option value="4">上海美年大健康</option>
+                    <option value="5">上海爱康国宾</option>
+                    <option value="6">上海美年大健康</option>
+                    <option value="7">上海爱康国宾</option>
+                    <option value="8">上海美年大健康</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">是否设为总店：</label>
+            <div class="col-sm-9 ">
+                <input type="hidden" name="headFlag">
+            </div>
+        </div>
+        <input type="hidden" id="shopId" />
+    </div>
+    <div class="modal-footer">
+        <button type="button" id="save" class="btn btn-primary">保存</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：admin.guanaihui.com前端MVC框架
+ 2. 文件名称：shop->products.less (商户管理->商品列表)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@import "../variables.less" ;
+@import "../mixins.less" ;
+@import "./product.less" ;
+.data-panel {
+    .assistant {
+        .filter-bar {
+            float : left ;
+            font-size : 1.2rem ;
+            line-height : 35px ;
+            margin-left : @gap-dimension ;
+        }
+    }
+}
+.table{
+	table-layout: fixed;
+    .noWidth{
+        width:0px;
+    }
+    .remove{
+        cursor: pointer;
+    }
+}

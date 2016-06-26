@@ -1,0 +1,104 @@
+@import "../mixins.less";
+// 标题
+#floorTitle{
+  #btnCreateFloor,#btnSaveOrder{
+    margin-top:12px;
+    margin-right:20px;
+  }
+
+  h1{
+    margin-right:200px;
+  }
+
+}
+
+.floor-tip{
+  margin-left:20px;
+  color:red;
+  font-size:12px;
+}
+
+.status-start{
+  color:green;
+}
+.status-stop{
+  color:red;
+}
+
+// 弹出层
+#floorModal{
+  .input-group{
+    margin:10px 0;
+    display: table;
+
+    .input-group-addon{
+      &.nav-title{
+        padding-left:26px;
+      }
+    }
+  }
+  input[type=checkbox],input[type=radio]{
+    margin:0 5px 0 0;
+    width:20px;
+    height:15px;
+  }
+}
+
+.my-input-group{
+  margin:10px 0;
+  display:table;
+  width:100%;
+  *{
+    padding:0;
+    margin:0;
+    vertical-align: middle;
+  }
+  .my-group-title{
+    padding:6px 12px;
+    background:#eee;
+    border:1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size:14px;
+    color:#555;
+    text-align:right;
+    width:120px;
+    display:table-cell;
+  }
+  .my-group-content{
+    border:1px solid #ccc;
+    padding:6px 12px;
+    display:table-cell;
+    border-left:0px;
+    border-radius:0 5px 5px 0;
+    input[type='text']{
+      width:100%;
+      border:0px;
+      font-size:14px;
+      &:focus{
+        outline:none;
+      }
+    }
+    select{
+      width:100%;
+      border:0px;
+      font-size:14px;
+      &:focus{
+        outline:none;
+      }
+    }
+  }
+}
+
+.inline-block-group{
+  .block-item{
+    margin-right:10px;
+    font-size:14px;
+    display:inline-block;
+  }
+  input[type='text']{
+    width:auto !important;
+  }
+  select{
+    width:auto !important;
+  }
+}

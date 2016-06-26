@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <title>成都地铁</title>             
+        <link rel="stylesheet" href="../css/stations.min.css">
+    </head>
+    <body>
+        <input type="hidden" id="startId" value="">
+        <input type="hidden" id="terminalId" value="">
+        <div class="startEnd">
+            <div class="metro">
+                <em class="childOne" id="childOne"><i>起点</i></em>
+                <span></span>
+                <em class="childTwo" id="childTwo"><i>终点</i></em>
+            </div>
+        </div>
+        <div class="carInfo memo">
+            <div class="infoCar">
+                <span>
+                    <strong class="start-station">桐梓林</strong><i></i><strong class="terminal-station">牛王庙</strong>
+                    <em>
+                        <b>28分钟</b><b>途经8站</b><b>5元</b>
+                    </em>
+                </span>
+                <a href="#">详情 ></a>
+            </div>
+        </div>
+        <ul class="context-menu" data-target="">
+            <li class="selected-station"></li>
+            <li>
+                <a href="javascript:void(0);" id="setAsStart"><span>设为起点</span><i class="icon-16 start"></i></a>                
+            </li>            
+            <li>
+                <a href="javascript:void(0);" id="setAsTerminal"><span>设为终点</span><i class="icon-16 terminal"></i></a>                
+            </li>
+            <li>
+                <a href="javascript:void(0);" id="viewStationDetail"><span>车站信息</span><i class="icon-16 arrow"></i></a>                
+            </li>
+        </ul>
+        <!--悬浮在页面顶部的备注条-->
+        <!-- <dl class="memo">
+            <dt>
+                <span>更多详情</span>
+                <i class="icon-16 arrow"></i>     
+            </dt>
+            <dd>
+                <i class="icon-16 start"></i>
+                <span>起点：</span>
+                <span class="start-station">百草路</span>
+                <i class="icon-16 terminal"></i>
+                <span>终点：</span>
+                <span class="terminal-station">天府广场</span>
+            </dd>
+            <dd class="summary"></dd>
+            <dd class="close-container"><a href="javascript:void(0);" class="close"><img src="../css/images/close.png"></a></dd>
+        </dl> -->
+        <!--遮罩层，在图片上面一层-->
+        <div class="mask"></div>
+        <!--加载进度条-->
+        <div class="loading">
+            <img src="../css/images/loading.gif">
+            <span>正在加载数据，请稍等...</span>
+        </div>
+        <div class="map"><img src="../css/images/metro.jpg"></div>
+        <script src="../jssrc/app.js"></script>
+        <script src="../jssrc/controller.js"></script>
+        <script src="../jssrc/stations.js"></script>
+    </body>
+</html>

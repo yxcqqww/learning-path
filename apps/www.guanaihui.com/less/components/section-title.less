@@ -1,0 +1,28 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：www.guanaihui.com前端MVC框架
+ 2. 文件名称：section-title (页面内容分隔标题)
+ 3. 作者：yinqin@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.section-title {
+    background-color: #fafafa;
+    border-bottom: 2px solid @lighter-line-gray-color ;
+    margin-top: 10px;
+    margin-bottom: -1px;
+    /**如是颜色为橘色，需另外加.warning********/
+    &.warning {
+        h2 {
+            border-bottom-color: @orange-color ;
+            color: @orange-color ;
+        }
+    }
+    h2 {
+        border-bottom: 2px solid @green-color ;
+        color: @green-color ;
+        .inline-block();
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding: 5px 15px;
+        font-size: 1.6rem;
+    }
+}

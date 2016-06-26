@@ -1,0 +1,270 @@
+@import "../../../guanaihui/less/mixins.less" ;
+@import "../../../guanaihui/less/iconfont.less" ;
+
+@color-info:#ed6d00;
+@color-gray:#dcdcdc;
+@gap-v:8px;
+
+html{
+  font-size:10px;
+  *{
+    vertical-align: middle;
+    padding:0;
+    margin:0;
+  }
+  a{
+    &:link{
+      text-decoration: none;
+    }
+  }
+
+}
+body{
+  font-size:1.2rem;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  头部
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+header{
+
+  background-color:#FFF;
+  border-bottom:1px solid @color-gray;
+  padding:12px;
+  position:relative;
+
+  h1{
+    color:@color-info;
+    text-align:center;
+    font-size:1.6rem;
+    font-weight:400;
+  }
+
+  .back{
+    position:absolute;
+    left:@gap-v;
+    color:@color-info;
+    display:block;
+  }
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  地铁起始信息
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#stationInfo{
+
+  padding:15px;
+  text-align:center;
+  background-color:@color-info;
+
+  span{
+    color:#FFF;
+    font-size:1.6rem;
+    img{
+      width:60px;
+    }
+  }
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  线路描述
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#lineDesc{
+
+  padding:@gap-v;
+  background:#FFF;
+  border-bottom:1px solid @color-gray;
+
+  // 标签
+  .tags{
+
+    .tag{
+
+      width:22px;
+      height:22px;
+      line-height:22px;
+      font-size:1.4rem;
+
+      border-radius:50%;
+      color:#FFF;
+      text-align:center;
+      display:inline-block;
+
+      &.tag01{
+        background-color:#4c287d;
+      }
+
+      &.tag02{
+        background-color:#0fb057;
+      }
+
+    }
+
+    i{
+      color:#c8c8c8;
+    }
+
+  }
+
+  // 描述
+  p{
+    font-size:1.4rem;
+    padding:@gap-v 0;
+    line-height:1.8rem;
+  }
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  站点视图
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#stationViewer{
+
+  padding:@gap-v;
+
+  dl{
+
+    // 站点提示
+    dt{
+
+      width:80px;
+      float:left;
+      min-height:60px;
+      text-align:right;
+
+      p{
+
+        position:relative;
+        top:-3px;
+        left:-10px;
+        font-size:1.2rem;
+        color:#777;
+
+        img{
+          width:22px;
+        }
+
+      }
+
+    }
+
+    // 站点名称和描述
+    dd{
+
+      margin-left:80px;
+      position:relative;
+      border-left:1px solid #333;
+
+      min-height:60px;
+      padding-left:20px;
+      font-size:1.4rem;
+
+      .station-circle{
+
+        width:12px;
+        height:12px;
+        border:1px solid #333;
+
+        border-radius:50%;
+        background:#FFF;
+
+        position:absolute;
+        left:-7px;
+
+      }
+
+      // 站点描述
+      p{
+
+        color:#777;
+        font-size:1.2rem;
+        line-height:1.4rem;
+
+      }
+
+    }
+
+    // 线路 1
+    &.line01{
+
+      dd{
+
+        border-left:1px solid #4c287d;
+
+        .station-circle{
+
+          border:1px solid #4c287d;
+
+        }
+
+      }
+
+    }
+
+    // 线路 2
+    &.line02{
+
+      dd{
+
+        border-left:1px solid #0fb057;
+
+        .station-circle{
+
+          border:1px solid #0fb057;
+
+        }
+
+      }
+
+    }
+
+    // 中转站
+    &.station-transfer{
+
+      dt{
+
+        p{
+
+          left:-15px;
+
+        }
+
+      }
+
+      dd{
+
+        .station-circle{
+
+          width:30px;
+          height:30px;
+
+          border:0;
+          background:url(../css/images/transfer.png) no-repeat;
+          background-size:100%;
+
+          left:-15px;
+          top:-10px;
+
+        }
+
+      }
+
+    }
+
+    // 终点站
+    &.station-end{
+
+      dd{
+
+        border-left:0;
+
+      }
+
+    }
+
+  }
+
+}

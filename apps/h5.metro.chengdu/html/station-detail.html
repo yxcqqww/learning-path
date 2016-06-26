@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>成都地铁</title>
+    <link rel="stylesheet" href="//dev01.guanaihui.cn/apps/h5.metro.chengdu/css/station-detail.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="javascript:history.back();" class="back"><i class="iconfont icon-fanhui"></i></a>
+        <h1>站点详情</h1>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="station-info info-row">
+            <div class="station-name">
+                <i class="iconfont icon-dingxiang2"></i>
+                <span class="info-tag">1</span>
+                <p class="">华西坝华西坝华西坝华西坝华西坝</p>
+            </div>
+
+            <div class="station-map">
+                <button>站点地图</button>
+            </div>
+        </div>
+
+        <p class="info-row title">
+            首末班车时间
+        </p>
+        <div class="info-row" id="runTime">
+            <div class="info">
+                <div class="left">
+                    <dl>
+                        <dt><span class="info-tag">1</span></dt>
+                        <dd>升仙湖方向</dd>
+                    </dl>
+                </div>
+                <p class="right">06:45 / 23:00</p>
+            </div>
+            <div class="info">
+                <div class="left">
+                    <dl>
+                        <dt></dt>
+                        <dd>广都方向</dd>
+                    </dl>
+                </div>
+                <p class="right">06:45 / 23:00</p>
+            </div>
+        </div>
+
+        <p class="info-row title">站内配套</p>
+        <ul id="stationConfig" class="info-row">
+            <li>残疾人牵引机</li>
+        </ul>
+
+        <p class="info-row title">出口信息</p>
+        <div class="info-row" id="busConfig">
+            <dl>
+                <dt>A出口</dt>
+                <dd>人民广场南路三段、阿萨德发、新的蓝街</dd>
+            </dl>
+            <dl>
+                <dt>B出口</dt>
+                <dd>人民广场南路三段、阿萨德发、新的蓝街，阿巴斯他路</dd>
+            </dl>
+            <dl>
+                <dt>C出口</dt>
+                <dd>新的蓝街，阿巴斯他路</dd>
+            </dl>
+        </div>
+
+
+        <p class="info-row title">公交配套</p>
+        <div class="info-row" id="busConfig">
+            <dl>
+                <dt>A出口</dt>
+                <dd>111、423、42、34、123、5、90、3</dd>
+            </dl>
+            <dl>
+                <dt>B出口</dt>
+                <dd>111、423、42、34、123、5、90、3、101、98、657、139、809、990</dd>
+            </dl>
+            <dl>
+                <dt>C出口</dt>
+                <dd>5、90、3、101、98、657、139、809、990</dd>
+            </dl>
+        </div>
+        <p class="info-row title">站内图</p>
+
+        <!-- 地铁图 -->
+        <div class="swiper-container" id="info-imgs">
+            <div class="swiper-wrapper">
+                <a class="swiper-slide" href="javascript:;"><img src="//www.atool.org/placeholder.png?size=320x200" class="img-responsive" alt=""></a>
+                <a class="swiper-slide" href="javascript:;"><img src="//www.atool.org/placeholder.png?size=320x200" class="img-responsive" alt=""></a>
+                <a class="swiper-slide" href="javascript:;"><img src="//www.atool.org/placeholder.png?size=320x200" class="img-responsive" alt=""></a>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <script src="//dev01.guanaihui.cn/apps/h5.metro.chengdu/js/app.min.js"></script>
+    <script data-main="//dev01.guanaihui.cn/apps/h5.metro.chengdu/js/station-detail.min.js" src="//dev03.guanaihui.cn/guanaihui/js/require.min.js"></script>
+</body>
+</html>

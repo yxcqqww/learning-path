@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>4月特惠专题</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body, html {
+            margin: 0;
+            width: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-size: 12px;
+            font-family: "Microsoft Yahei", "微软雅黑";
+        }
+
+        img {
+            width: 100%;
+        }
+
+        ul, ol, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .fixed-bar {
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            z-index: 100;
+        }
+
+        .hd-all {
+            font-size: 12px;
+            font-family: "Microsoft Yahei", "微软雅黑";
+            background: #8bc93c;
+            padding-bottom: 15%;
+        }
+
+        .hd-all .banner {
+            margin-bottom: 5px;
+            width: 100%;
+            padding-top: 49.6875%;
+            background: url(m-banner.jpg) no-repeat center;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+        }
+
+        .hd-all .title {
+            display: block;
+            margin: 5px auto 30px;
+            width: 100%;
+            padding-top: 7.8125%;
+        }
+
+        .hd-all .title.one {
+            background: url(m-tt-bg1.jpg) no-repeat;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+        }
+
+        .hd-all .title.two {
+            background: url(m-tt-bg2.jpg) no-repeat;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+        }
+
+        .hd-all .title.three {
+            background: url(m-tt-bg3.jpg) no-repeat;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+        }
+
+        .ulbox {
+            margin: 0 auto;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .cp-ul {
+            width: 100%;
+            padding: 0 0 0 5%;
+        }
+
+        .cp-ul li {
+            position: relative;
+            display: block;
+            float: left;
+            width: 45.3125%;
+            padding-bottom: 15px;
+            margin: 0 4.5% 5% 0;
+            background: #f3ffe3;
+        }
+
+        .cp-ul .img {
+            position: relative;
+            width: 100%;
+            padding-top: 78.78787878%
+        }
+
+        .cp-ul img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cp-ul p {
+            margin: 0;
+        }
+
+        .cp-ul a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .cp-ul .t {
+            width: 90%;
+            margin-left: 5%;
+            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+            border-bottom: 1px solid #aaa;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .cp-ul .yj {
+            margin-top: 5px;
+            color: #666;
+            font-size: 12px;
+            padding-left: 10%;
+            text-decoration: line-through;
+        }
+
+        .cp-ul .xj {
+            position: relative;
+            top: -3px;
+            color: #ff5555;
+            font-size: 13px;
+            padding-left: 10%;
+        }
+
+        .cp-ul .xj span {
+            position: relative;
+            margin-left: 5%;
+            font-size: 20px;
+        }
+
+        .cp-ul .buy {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            height: 20px;
+            line-height: 18px;
+            font-size: 13px;
+            color: #FFF;
+            background: #ff5555;
+            border: none;
+            border-radius: 5px;
+            font-family: "Microsoft Yahei", "微软雅黑";
+            outline: none;
+            cursor: pointer;
+        }
+
+        .hd-all .nav {
+            position: relative;
+            margin-bottom: 25px;
+            width: 100%;
+            padding-top: 39.0625%;
+            background: url(m-bg.jpg) no-repeat;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+        }
+
+        .nav .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 4% 0;
+        }
+
+        .hd-all .nav a {
+            float: left;
+            display: inline-block;
+            width: 30%;
+            margin-left: 2.5%;
+        }
+
+        .nav a img {
+            width: 100%;
+        }
+
+        .fixed-bar {
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            z-index: 100;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="hd-all">
+    <div class="banner"></div>
+    <div class="nav">
+        <div class="box">
+            <a href="#one"><img src="m-icon1.jpg" alt=""></a>
+            <a href="#two"><img src="m-icon2.jpg" alt=""></a>
+            <a href="#three"><img src="m-icon3.jpg" alt=""></a>
+        </div>
+    </div>
+    <div class="title one" id="one"></div>
+    <div class="ulbox">
+        <ul class="cp-ul" id="ul_one">
+        </ul>
+    </div>
+    <div class="title two" id="two"></div>
+    <div class="ulbox">
+        <ul class="cp-ul" id="ul_two">
+        </ul>
+    </div>
+    <div class="title three" id="three"></div>
+    <div class="ulbox">
+        <ul class="cp-ul" id="ul_three">
+        </ul>
+    </div>
+    <div class="fixed-bar">
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.guanaihui.app" class="btn-booking">
+            <img src="app-download-bg.png" alt="" class="img-responsive">
+        </a>
+    </div>
+</div>
+
+<script src="//cdn01.guanaihui.cn/apps/m.guanaihui.com/js/app.min.js"></script>
+<script data-main="m_cjth.js" src="//cdn01.guanaihui.cn/guanaihui/js/require.min.js"></script>
+<script src="spring-beauty.js"></script>
+</body>
+</html>
+
+
+
