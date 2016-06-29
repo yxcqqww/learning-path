@@ -1,0 +1,86 @@
+ {
+     "m": {
+         "less": {
+             "mainsrc": "apps/m.guanaihui.com/less/app.less",
+             "maindest": "apps/m.guanaihui.com/css/app.min.css",
+             "src": "apps/m.guanaihui.com/less",
+             "dest": "apps/m.guanaihui.com/css",
+             "ext": ".min.css",
+             "shim": [{
+                 "src": "components/header.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "components/icon.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "components/iconfont.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "components/section.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "components/tabs.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "mixins/background.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "mixins/border-radius.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "mixins/center-block.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "mixins/display.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "mixins/float.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "mixins/font.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "mixins/text.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "mixins/triangle.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "variables/global.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "variables/pagination.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "less/bootstrap-reset.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "less/components.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "less/mixins.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "less/normalize.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "less/reset.less",
+                 "dest": "app.less"
+             }, {
+                 "src": "less/variables.less",
+                 "dest": "app.less"
+             }]
+         },
+         "js": {
+             "mainsrc": ["guanaihui/js/lib/jQuery/jquery-1.11.3.js", "bootstrap/3.3.4/js/bootstrap.js", "guanaihui/jssrc/jquery.cookie.js", "apps/m.guanaihui.com/jssrc/controller.js"],
+             "maindest": "apps/m.guanaihui.com/js/app.min.js",
+             "src": "apps/m.guanaihui.com/jssrc",
+             "dest": "apps/m.guanaihui.com/js",
+             "ext": ".min.js",
+             "shim": [{
+                 "src": "jssrc/controller.js",
+                 "dest": "app.js"
+             }]
+         }
+     }
+ }
