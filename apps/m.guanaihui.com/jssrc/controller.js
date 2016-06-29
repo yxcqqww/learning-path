@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 1. 项目名称：m.360guanai.com
+ 1. 项目名称：m.guanaihui.com
  2. 页面名称：Controller (每个页面的类都继承于这个控制器基类)
- 3. 作者：赵华刚(zhaohuagang@guanaihui.com)
+ 3. 作者：雷朗峰(leilangfeng@guanaihui.com)
  4. 备注：对api的依赖：jQuery
  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 function Controller() {
@@ -10,13 +10,13 @@ function Controller() {
     一些关于静态资源地址的配置
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     this.staticDomainPrefix = (this.environment === "test") ? "static" : "cdn";
-    this.staticDomain = "//" + this.staticDomainPrefix + "01.360guanai.com";
+    this.staticDomain = "//" + this.staticDomainPrefix + "01.guanaihui.com";
     this.utilStaticPrefix = this.staticDomain + "/guanaihui/js/util";
-    this.appStaticPrefix = this.staticDomain + "/apps/m.360guanai.com/js";
+    this.appStaticPrefix = this.staticDomain + "/apps/m.guanaihui.com/js";
     /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     一些关于cookie参数的配置
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    this.cookieDomain = ".360guanai.com"; //整个app用来设置和取得cookie的域名
+    this.cookieDomain = ".guanaihui.com"; //整个app用来设置和取得cookie的域名
     this.cookieKeyPrefix = "M_"; //cookie的key值前缀，用来区分哪个模块的cookie，比如M_表示M站
     this.cookieKeyConf = {
         //一些关于cookie参数名称的配置
@@ -38,7 +38,7 @@ function Controller() {
     /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     接口的地址
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    this.apiPrefix = (this.environment === "test") ? "//mtest.360guanai.com" : "//m.360guanai.com"; //api接口地址前缀
+    this.apiPrefix = (this.environment === "test") ? "//mtest.guanaihui.com" : "//m.guanaihui.com"; //api接口地址前缀
     this.sendSmsApiUrl = this.apiPrefix + "/Common/SendSms"; //发送短信的接口
     this.loginApiUrl = this.apiPrefix + "/Account/Login"; //登录的接口
     this.hcsListApiUrl = this.apiPrefix + "/HealthCheckupStore/GetHcsList"; //门店列表的接口
