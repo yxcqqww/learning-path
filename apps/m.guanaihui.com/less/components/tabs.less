@@ -1,0 +1,37 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1. 项目名称：m.guanaihui.com前端MVC框架
+ 2. 文件名称：tabs.less (标签页风格)
+ 3. 作者：zhaohuagang@guanaihui.com
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.tabs {
+    &>.tabs-handle {
+        border-bottom: 1px solid @darker-line-gray-color ;
+        .clearfix();
+        margin: 0;
+        padding: 0 5px;
+        &>li {
+            border-bottom: 2px solid transparent;
+            float: left;
+            &>h2 {
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 25px;
+                margin: 0 3px;
+                padding: 5px;
+                text-align: center;
+            }
+            &.on {
+                border-bottom-color: @green-color ;
+                color: @darker-green-color ;
+            }
+        }
+        &.orange {
+            border-bottom: 1px solid #fce0d8;
+            &>li.on {
+                border-bottom-color: @orange-color;
+                color: @orange-color;
+            }
+        }
+    }
+}
