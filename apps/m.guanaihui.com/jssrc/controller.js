@@ -39,25 +39,9 @@ function Controller() {
     接口的地址
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     this.apiPrefix = (this.environment === "test") ? "//mtest.guanaihui.com" : "//m.guanaihui.com"; //api接口地址前缀
-    this.sendSmsApiUrl = this.apiPrefix + "/Common/SendSms"; //发送短信的接口
-    this.loginApiUrl = this.apiPrefix + "/Account/Login"; //登录的接口
-    this.hcsListApiUrl = this.apiPrefix + "/HealthCheckupStore/GetHcsList"; //门店列表的接口
-    this.productListApiUrl = this.apiPrefix + "/Product/GetProductList"; //套餐列表的接口地址
-    this.cardListApiUrl = this.apiPrefix + "/Card/GetCardList"; //体检卡列表的接口地址
-    this.shoppingCardAddApiUrl = this.apiPrefix + "/Cart/AddItem"; //体检卡列表的接口地址
-    this.getHcsAndCardByLocationApiUrl = this.apiPrefix + "/Common/GetHcsAndCardByLocation"; //获取首页定位后门店和体检卡信息
-    this.bookingLoginApiUrl = this.apiPrefix + "/Booking/CheckLogin"; //持卡预约登录地址
-    this.getUpgradeBookingApiUrl = this.apiPrefix + "/Booking/GetUpdradeProduct"; //获取升级的套餐信息
-    this.getSupportStoresByProductApiUrl = this.apiPrefix + "/Common/GetAllStoresByProductView"; //获取套餐支持的门店信息
-    this.getSupportHeathCheckupItemByProductId = this.apiPrefix + "/Common/GetHeathCheckupItemByProductIdView"; // 获取套餐支持的体检项
-    this.getProductDiffItemsApiUrl = this.apiPrefix + "/Common/GetProductDiffItemsView"; // 获取套餐支持的体检项
-    this.getStoreListApiUrl = this.apiPrefix + "/Booking/GetStores"; //预约流程中获取可选门店列表数据接口地址
-    this.validateSmsForUserApiUrl = this.apiPrefix + "/Common/ValidateSmsForUser"; //验证短信验证码 并用此手机号码登陆系统
-    this.validateSmsApiUrl = this.apiPrefix + "/Common/ValidateSms"; //验证短信验证码
-    this.getPromoCodeApiUrl = this.apiPrefix + "/Account/GetPromoCode"; //获取用户账号信息的接口地址
-    this.getSingleBookingFormViewApiUrl = this.apiPrefix + "/Booking/SingleBookingFormView"; //获取添加单个预约信息部分视图的接口地址
-    this.getAreaInfoByNameApiUrl = this.apiPrefix + "/Common/GetAreaInfoByName"; //根据区域名称获取区域信息
-
+    // this.sendSmsApiUrl = this.apiPrefix + "/Common/SendSms"; //发送短信的接口
+    // this.loginApiUrl = this.apiPrefix + "/Account/Login"; //登录的接口
+    // this.hcsListApiUrl = this.apiPrefix + "/HealthCheckupStore/GetHcsList"; //门店列表的接口
 
     /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     如果通过geolocation无法取到经纬度信息，就用上海的经纬度来请求数据，这里用来设置默认经纬度信息
@@ -76,17 +60,17 @@ function Controller() {
     /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
     配置相关跳转地址
     -----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    this.welcomeUrl = "/Home"; //登录跳转地址
-    this.logoutRedirectUrl = "/Account/loginOut"; //登出以后跳转的地址
-    this.shoppingCardUrl = "/Cart"; //购物车页地址
-    this.bookingSuccessUrl = "/Booking/Options"; //持卡登录成功后转向地址
-    this.bookingChooseStoreUrl = "/Booking/ChooseStore" //预约选择门店地址
-    this.bookingChooseDateUrl = "/Booking/ChooseDate"; //预约选择日期地址
-    this.bookingConfirmWithCardUrl = "/Booking/Confirm"; //持卡预约提交页
-    this.bookingConfirmWithoutCardUrl = "/Booking/ConfirmWithoutCard"; //无卡预约提交页
-    this.bookingSuccessRedirectUrl = "/Booking/Success"; //持卡预约提交成功跳转页
-    this.orderSuccessRedirectUrl = "/Order/ConfirmSuccess"; //订单提交成功后跳转页
-    this.bookingStepUrl = "/Home/BookingStep"; //购卡说明跳转页
+    // this.welcomeUrl = "/Home"; //登录跳转地址
+    // this.logoutRedirectUrl = "/Account/loginOut"; //登出以后跳转的地址
+    // this.shoppingCardUrl = "/Cart"; //购物车页地址
+    // this.bookingSuccessUrl = "/Booking/Options"; //持卡登录成功后转向地址
+    // this.bookingChooseStoreUrl = "/Booking/ChooseStore" //预约选择门店地址
+    // this.bookingChooseDateUrl = "/Booking/ChooseDate"; //预约选择日期地址
+    // this.bookingConfirmWithCardUrl = "/Booking/Confirm"; //持卡预约提交页
+    // this.bookingConfirmWithoutCardUrl = "/Booking/ConfirmWithoutCard"; //无卡预约提交页
+    // this.bookingSuccessRedirectUrl = "/Booking/Success"; //持卡预约提交成功跳转页
+    // this.orderSuccessRedirectUrl = "/Order/ConfirmSuccess"; //订单提交成功后跳转页
+    // this.bookingStepUrl = "/Home/BookingStep"; //购卡说明跳转页
 
 
     /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
